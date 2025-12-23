@@ -62,8 +62,8 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 ---
 
 **Maintainer:** Project UP(date) by SE태지 
-- [jiyongseong](https://github.com/jiyongseong)
-- [taeyo-kim](https://github.com/taeyo-kim)
+- [**tae**yo-kim](https://github.com/taeyo-kim)
+- [**ji**yongseong](https://github.com/jiyongseong)
 
 ---
 ## Powered by
