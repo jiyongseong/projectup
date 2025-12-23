@@ -66,3 +66,12 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 - [taeyo-kim](https://github.com/taeyo-kim)
 
 ---
+Powered by
+- Azure Logic App
+- Azure Function App (C#, PowerShell, Python)
+- Azure Container Registry
+- Azure SQL Database
+- Azure Automation
+- Azure Storage account
+- Azure Translator API
+- Microsoft Foundry (with gpt-4o)
