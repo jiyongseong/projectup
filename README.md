@@ -2,7 +2,8 @@
 
 > **"매일 쏟아지는 Azure의 방대한 업데이트, 이제 주 단위 요약으로 핵심만 빠르게 파악하세요!"**
 
-이 저장소는 Microsoft Azure의 [공식 업데이트 페이지](https://azure.microsoft.com/ko-kr/updates)에 게시되는 매일의 기술 소식들을 수집하여, 클라우드 엔지니어와 아키텍트가 읽기 좋게 **주 단위(Weekly)**로 요약하여 제공합니다.
+이 저장소는 Microsoft Azure의 [공식 업데이트 페이지](https://azure.microsoft.com/ko-kr/updates)에 게시되는 매일의 기술 소식들을 수집하여, 클라우드 엔지니어와 아키텍트가 읽기 좋게 **주 단위(Weekly)** 로 요약하여 제공합니다.
+
 해당 저장소의 내용은 **Project UP(date) by SE태지**에 의해서 자동으로 생성됩니다.
 
 --
