@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 프로젝트의 목적 (Purpose)
+## 📌 프로젝트의 목적 
 
 Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확인하기 어려운 바쁜 전문가들을 위해 다음과 같은 가치를 제공합니다.
 
@@ -18,7 +18,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 
 ---
 
-## 📂 저장소 구조 (Directory Structure)
+## 📂 저장소 구조
 
 업데이트 리포트는 연도 및 주차별로 정리되어 있습니다.
 
@@ -27,7 +27,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 
 ---
 
-## 🛠️ 활용 방법 (How to Use)
+## 🛠️ 활용 방법
 
 1. **Issue/Discussions:** 특정 업데이트에 대한 심도 있는 논의가 필요하면 Issue를 활용해 주세요.
 2. **Watch:** 이 저장소를 **Watch** 설정하면 매주 업데이트되는 Azure 소식을 알림으로 받아보실 수 있습니다.
@@ -35,7 +35,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 
 ---
 
-## 🤝 기여하기 (Contributing)
+## 🤝 기여하기
 
 이 프로젝트는 커뮤니티의 참여를 언제나 환영합니다!
 
@@ -47,7 +47,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 
 ---
 
-## 🔗 관련 링크 (References)
+## 🔗 관련 링크
 
 * [Official Azure Updates](https://azure.microsoft.com/ko-kr/updates)
 * [Azure Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
@@ -55,7 +55,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 
 ---
 
-## 📄 라이선스 (License)
+## 📄 라이선스 
 
 이 프로젝트는 **MIT License**를 따릅니다. 누구나 자유롭게 공유하고 활용할 수 있습니다.
 
@@ -66,7 +66,7 @@ Azure 생태계는 매우 빠르게 변화합니다. 매일 업데이트를 확�
 - [taeyo-kim](https://github.com/taeyo-kim)
 
 ---
-Powered by
+## Powered by
 - Azure Logic App
 - Azure Function App (C#, PowerShell, Python)
 - Azure Container Registry
