@@ -1,72 +1,91 @@
 # Azure 월간 업데이트 요약 - 2026년 02월
 
-## 트렌드 및 핵심 인사이트
-2026년 2월의 Azure 업데이트는 데이터 보안과 고가용성을 강화하고, 멀티 클라우드 및 하이브리드 전략 지원을 통해 기업들의 비즈니스 연속성을 강화하는 방향으로 진화했습니다. 새로운 지역 데이터센터 확장, 암호화 및 백업 개선, 애플리케이션 및 컨테이너 배포 간소화 등 다양한 분야에서 혁신적인 기능이 추가되었습니다. 특히 AI 및 머신러닝 관련 기능이 지속적으로 강화되고 있으며, Azure Databricks와 같은 분석 플랫폼에서 새로운 에이전트 및 모델을 제공하여 고급 분석과 자동화에 대한 수요를 충족시키고 있습니다.
+---
 
-이달의 트렌드는 다음과 같은 주요 특징을 보였습니다:
-1. **지역 확장**: 새로운 데이터센터와 지역 지원 확대로, 기업들이 데이터 및 보안 요구를 충족시키고 더 낮은 대기 시간을 제공할 수 있게 되었습니다.
-2. **애플리케이션 보안 강화**: 웹 애플리케이션 방화벽 및 Azure Front Door에서 새로운 규칙 집합 및 프리미엄 기능이 공개되어 악성 트래픽 분석 및 방어 기능이 강화되었습니다.
-3. **AI와 빅데이터 분석 강화**: Azure Databricks에서 AI 모델 지원 확장과 함께 서버리스 작업 공간 출시로 데이터 분석의 접근성을 높였습니다.
-4. **컨테이너 및 클라우드 워크로드 효율성 향상**: Azure Kubernetes Service(AKS)에서 자동화된 컴퓨팅 리소스 관리와 구성을 지원하는 새로운 기능이 추가되었습니다.
-5. **백업 및 스토리지 기능 개선**: 백업 및 스토리지 성능을 강화하여, 재해 복구와 데이터 보호 작업이 더욱 신속하고 간단해졌습니다.
+## 트렌드와 핵심 인사이트
 
-이와 같은 트렌드는 기업들이 비용 효율적으로 고보안 및 고가용성 솔루션을 운영하며 데이터 중심의 의사 결정을 가속화할 수 있도록 지원합니다.
+2026년 2월 Azure 업데이트의 주요 트렌드는 클라우드 서비스의 지역 확장, 보안 강화를 위한 새로운 기능, 자동화 및 성능 최적화를 위한 도구의 발전에 초점이 맞추어졌습니다. 여러 서비스는 데이터 복원력 강화, 개발자 중심 도구 개선, 보안 측면 강화 등 엔터프라이즈급 작업을 지원하기 위해 새로운 기능을 제공하며, 기술적인 복잡성을 줄여 사용자가 쉽게 접근할 수 있도록 개선되었습니다.
+
+Azure는 전 세계 클라우드 사용자를 위한 서비스를 확장하고 안정성을 높이는 데 집중하고 있습니다. 데이터센터 지역 확장은 특히 데이터 국적 및 규제 준수 요구를 해결하며, 새로운 스토리지 및 백업 옵션을 통해 비즈니스 연속성을 더욱 강화합니다. 이와 함께 Kubernetes 및 Databricks와 같은 주요 플랫폼에서 관리 효율성을 개선하고 새로운 기능을 추가하여 사용자의 운영 효율성을 지원합니다.
+
+보안 측면에서는 Web Application Firewall과 Azure Front Door을 포함한 네트워킹 서비스에서 업계 표준을 추가하고 불필요한 암호화 방식을 제거하였습니다. 또한 새로운 개발 및 관리 도구는 DevOps 및 분산 환경에서 성능 및 보안 요구 사항을 충족하도록 구성되었습니다.
+
+이러한 발전은 클라우드 기반 서비스의 사용자 경험을 향상시키는 동시에 보안, 성능, 데이터 관리라는 핵심 요소를 강화합니다. 앞으로도 Azure는 사용자 요구를 적극적으로 반영하여 다양한 지역, 산업, 그리고 애플리케이션에 맞춘 서비스를 지속적으로 제공할 것으로 기대됩니다.
 
 ---
 
-## 🚀 정식 지원 (Launched)
-### [Azure Databricks Supervisor Agent](https://azure.microsoft.com/updates?id=557081)
-Supervisor Agent는 Azure Databricks에 정식 지원되었으며, 엔터프라이즈급 에이전트 자동화를 제공합니다.
+## 🗺️ 지역 및 데이터센터
 
-### [Azure Functions .NET 10 지원](https://azure.microsoft.com/updates?id=556003)
-Azure Functions에서 최신 .NET 런타임(.NET 10)에 대한 정식 지원이 시작되었습니다.
+Azure는 새로운 데이터센터 지역을 소개하고 기존 서비스가 새로운 지역에 확장되며 접근성과 규제 준수를 강화하고 있습니다.
 
-### [AKS에서 Kubernetes 버전 1.34 지원](https://azure.microsoft.com/updates?id=548114)
-Kubernetes 버전 1.34가 AKS에서 정식 지원되며, 높은 안정성과 새로운 기능을 제공합니다.
+### Azure South 지역 확대
+[새로운 타이 지역 데이터센터 발표](https://azure.microsoft.com/updates?id=553999)  
+Azure는 타이 지역(Tailand South)에 새로운 데이터센터를 설치할 계획으로, 이 지역의 하이퍼스케일 클라우드 서비스에 대한 접근성을 확대합니다.
 
----
+### Premium SSD v2 확장
+[Premium SSD v2 새로운 지역 제공](https://azure.microsoft.com/updates?id=557623)  
+Premium SSD v2는 브라질 동남부, 말레이시아 서부, 인도네시아 중앙 지역으로 확대되었으며, 고성능과 낮은 대기 시간을 제공합니다.
 
-## 🌐 미리 보기 (Preview)
-### [Application Gateway for Containers - AKS 관리 애드온](https://azure.microsoft.com/updates?id=555603)
-AKS 클러스터에 대한 Application Gateway 관리가 더욱 간소화됩니다.
-
-### [Azure Monitor 데이터 파이프라인 변환](https://azure.microsoft.com/updates?id=555488)
-Azure Monitor에서 데이터 형태를 사전 변환하여 데이터 품질 및 분석 효율성을 높이는 기능이 공개되었습니다.
-
-### [Geo‑Redundant Backup for Premium SSD v2 in Azure Database for PostgreSQL](https://azure.microsoft.com/updates?id=557532)
-Azure PostgreSQL 데이터베이스에서 프리미엄 SSD v2와 함께 지리적으로 복제된 백업을 지원합니다.
+### Azure Red Hat OpenShift 지역 확장
+[OpenShift 서비스의 새로운 지역 출시](https://azure.microsoft.com/updates?id=557897)  
+OpenShift 클러스터는 이제 말레이시아 서부, 뉴질랜드 북부, 멕시코 중앙 지역에서도 제공됩니다.
 
 ---
 
-## 🔒 보안 및 네트워킹
-### [Default Ruleset 2.2 in WAF for Azure Application Gateway](https://azure.microsoft.com/updates?id=553532)
-WAF의 새로운 규칙 집합(Default Ruleset 2.2)이 공개되어 웹 보안이 더욱 강화되었습니다.
+## 🔒 보안
 
-### [Azure Front Door Premium에서 UAE North 지역 지원](https://azure.microsoft.com/updates?id=556282)
-Azure Front Door Premium이 UAE North 지역에서 Private Link 원본 연결을 지원합니다.
+Azure는 데이터 및 네트워크 보안을 강화하는 여러 업데이트를 제공합니다.
 
-### [Azure Monitor 파이프라인의 보안 인입 및 Pod 배치](https://azure.microsoft.com/updates?id=552808)
-Azure Monitor는 TLS 보안 설정과 Azure Kubernetes 환경 내 애플리케이션 배치를 간소화하는 기능을 공개했습니다.
+### Web Application Firewall WAF 규칙 집합 2.2
+[WAF 규칙 집합 2.2 정식 지원](https://azure.microsoft.com/updates?id=553532)  
+새로운 규칙 집합은 OWASP Core Rule Set 3.3.4 기반으로 업그레이드되었으며 원격 코드 실행 및 SQL Injection 방지를 강화합니다.
 
----
+### Azure Front Door Cipher Suite 제한
+[Azure Front Door 및 CDN DHE 암호화 방식 지원 종료](https://azure.microsoft.com/updates?id=553527)  
+2026년 4월까지 DHE 암호화 방식은 지원 종료 예정으로 클라이언트 및 서버 업데이트가 요구됩니다.
 
-## 🛠️ 관리 및 운영
-### [Azure Kubernetes Fleet Manager 네임스페이스 스코프 배포](https://azure.microsoft.com/updates?id=548198)
-Azure Kubernetes Fleet Manager에서 네임스페이스 단위 자원 배포가 간단해졌습니다.
-
-### [Azure SQL Database에 대한 주요 미리 보기 업데이트](https://azure.microsoft.com/updates?id=550159)
-SQL 디플로이 방식이 간소화되고, 데이터베이스 페일오버 및 백업 회복 성능이 강화되었습니다.
+### User Delegation SAS 강화
+[Entra ID 기반 User Delegation SAS 예고](https://azure.microsoft.com/updates?id=557694)  
+SAS 사용을 특정 사용자 아이덴티티로 제한하여 보안 문제를 해결하고 보다 강력한 인증을 제공합니다.
 
 ---
 
-## ✋ 퇴출 및 종료 예정
-### [Managed NGINX Ingress with Application Routing Add-on](https://azure.microsoft.com/updates?id=555839)
-NGINX Ingress 컨트롤러는 2026년 11월에 퇴출됩니다. Gateway API 또는 Application Gateway for Containers로 전환 권장.
+## 🚀 기능과 서비스 출시
 
-### [Windows Server Annual Channel (Preview)](https://azure.microsoft.com/updates?id=557224)
-Windows Server Annual Channel은 2026년 5월 퇴출 예정이며 LTSC로 이전이 필요합니다.
+이번 달에는 여러 서비스가 정식 지원으로 전환되었으며, 성능 및 유연성이 개선되었습니다.
+
+### Azure Databricks Supervisor Agent
+[Supervisor Agent 정식 출시](https://azure.microsoft.com/updates?id=557081)  
+Databricks는 지능형 경로 조율을 지원하는 Supervisor Agent를 출시하여 자동화된 워크플로우를 강화합니다.
+
+### Azure Functions .NET 10 지원
+[.NET 10 정식 지원](https://azure.microsoft.com/updates?id=556003)  
+Azure Functions는 최신 .NET 환경을 완벽히 지원하며 작업자의 운영을 간소화합니다.
+
+### AKS LocalDNS 및 Auto-Provisioning
+[AKS LocalDNS 및 Auto-Provisioning 확장](https://azure.microsoft.com/updates?id=557203)  
+AKS 클러스터는 자동 노드 프로비저닝과 클러스터 내부 DNS 해석 기능을 통해 성능과 안정성을 개선합니다.
 
 ---
 
-## 이번 달 총평 및 전망
-이번 달 Azure 업데이트는 기업의 디지털 트랜스포메이션을 가속화하는 기술을 대거 도입하며 눈에 띄는 발전을 이뤘습니다. 특히, 데이터 복구와 보안 강화, 하이브리드 클라우드 활용 극대화에 대한 지원이 두드러졌습니다. 다음 달에는 컨테이너 관리와 AI 자동화 도구의 추가 강화, 여전히 발전하고 있는 네트워킹 및 보안 솔루션 트렌드를 지속적으로 기대할 수 있습니다.
+## ⚙️ 개발 및 미리보기
+
+미리보기 단계에서 제공되는 서비스는 사용자 피드백 및 다음 단계를 위한 테스트가 진행 중입니다.
+
+### Azure Monitor 데이터 변환
+[데이터 변환 기능에 대한 공개 미리보기](https://azure.microsoft.com/updates?id=555488)  
+Azure Monitor는 데이터 형태를 조정하여 비용 절감 및 데이터 품질을 향상시킵니다.
+
+### Kubernetes Fleet Manager 리소스 배치
+[Azure Kubernetes Fleet Manager의 네임스페이스 기반 배치](https://azure.microsoft.com/updates?id=548198)  
+Fleet Manager는 리소스를 더욱 세밀하게 분배할 수 있는 옵션을 제공하여 관리 효율성을 개선합니다.
+
+### Azure NetApp Files Elastic ZRS
+[Elastic ZRS 서비스 레벨 공개 미리보기](https://azure.microsoft.com/updates?id=550863)  
+고가용성과 높은 성능을 제공하는 ZRS가 Preview로 제공되며, 지역 내 데이터 보호를 강화합니다.
+
+---
+
+## 💡 총평 및 다음 달 전망
+
+2026년 2월 Azure의 업데이트는 글로벌 접근성과 보안 강화에 중점을 두었으며, 여러 엔터프라이즈급 기능이 출시되었습니다. Databricks와 Functions 같은 생산성을 높이는 개발 도구와 보안 모델은 기업의 디지털 혁신을 더욱 가속화할 것으로 보입니다. 앞으로는 데이터 복원력 및 멀티클라우드 솔루션 강화가 주요 초점으로 지속될 것이며 Kubernetes, AI 모델 서빙 플랫폼 등의 사용성도 더욱 즉각적인 지원을 받을 것으로 예측됩니다.
