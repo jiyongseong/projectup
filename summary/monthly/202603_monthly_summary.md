@@ -2,188 +2,172 @@
 
 ## 전반적인 트렌드와 핵심 인사이트
 
-2026년 3월 Azure 업데이트는 인프라 혁신과 AI 플랫폼 고도화가 동시에 진행되는 “모범 사례와 신기술의 융합”이 핵심 트렌드입니다. 전통적으로 강한 Azure 인프라 서비스에는 최신 관리 및 네트워크 기능, 데이터 통합 자동화, 신형 스토리지 옵션이 추가되어 엔터프라이즈급 확장성과 보안이 한층 강화되었습니다. 특히 네트워크 관리 기능(예: Azure Firewall Draft & Deploy, Web Application Firewall DRS 2.2 등), 프리미엄 SSD v2의 지역 확장, 컨테이너 네트워크 로그 등 실무 중심의 기능 개선이 눈에 띕니다.
+2026년 3월 Azure 업데이트는 AI와 데이터 플랫폼의 대규모 혁신과 기업 환경 중심의 기능 강화가 두드러집니다. 특히 Microsoft Foundry와 Microsoft Fabric 중심의 업데이트가 대량으로 이루어졌으며, 실무 환경에 바로 적용 가능한 정식 지원(General Availability) 기능이 여럿 추가되었습니다. Foundry Agent Service의 정식 출시, GPT-5.4와 Grok 4.1 등 첨단 AI 모델의 GA, 산업별 특화 분석/실시간 데이터 처리, 엔터프라이즈용 보안 및 네트워크 기능 확대 등이 주요 변화로 꼽힙니다.
 
-데이터베이스 측면에서는 Azure SQL, PostgreSQL, Databricks의 운영 자동화, 관측성 및 마이그레이션 편의성이 크게 개선되었습니다. AWS-데이터 이전 자동화, pgoutput 활용 등 멀티클라우드 연동 지원이 확대되고, SQL 프로젝트 기반 DevOps의 본격화로 데이터 개발과 CI/CD가 긴밀하게 연결되었습니다.
+이번 달은 AI 모델 운영의 품질 관리 및 자동화, 실제 기업 환경의 수요에 맞춘 확장성·관찰성(Observability) 강화, 미리 보기 기능을 통한 실험적 혁신이 활발하게 이루어진 점이 인상적입니다. 데이터 이동과 통합의 자동화, 여러 클라우드와 온프레미스 환경을 실무에서 손쉽게 연결할 수 있게 한 점 역시 사용성과 효율성에서 큰 진전으로 평가됩니다.
 
-AI 및 Microsoft Foundry/Microsoft Fabric 분야에서는 확실한 대세 전환이 감지됩니다. Microsoft Foundry는 GPT-5.4, Grok 등 신형 AI 모델의 출시와 함께, 엔터프라이즈 실무를 염두에 둔 고도화된 에이전트 분석·운영 기능(GA 평가, 추적, 모니터링) 및 실시간 음성 기반 AI 에이전트 지원이 정식 출시되었습니다. 파운드리와 퍼브릭은 데이터 영역 전반으로 확장된 모듈형 배포와 평가체계, 고도화된 보안(Private Link, BYO VNet 등), 관측성(Workspace Monitoring)과 같은 체계적 운영관리 옵션을 제공하며, 단순 PoC 단계에서 실제 대규모 운영까지 성장 가능한 구조를 제시합니다.
+보안 분야에서는 네트워크 격리, 프라이빗 링크, CMK(고객 관리 키) 등 조직별 데이터 보호와 컴플라이언스 대응력 강화가 강하게 반영됐습니다. DevOps 및 관리 자동화, 인프라 모빌리티, 배포 파이프라인 간소화 등 운영 측면의 개선도 지속적으로 이루어지고 있습니다.
 
-또한 데이터플로우/파이프라인 자동화, 미러링, 이벤트 기반 워크로드, 실시간 추론 및 모니터링, 다양한 시스템 간의 연결성 보장 등 Fabric을 중심으로 전방위 데이터 통합과 AI 실무화가 빠르게 진행되고 있습니다. 기존 Synapse 및 데이터팩토리 파이프라인을 손쉽게 마이그레이션할 수 있는 지원 역시 대규모 현대화 전략의 큰 촉진제가 될 전망입니다.
+AI와 데이터 기능뿐 아니라, 컨테이너, VM, Storage, 네트워크, 관리 자동화 등 전통적 Azure 서비스들도 신기능 추가와 서비스 지원 종료(retirement)에 대한 적극적인 공지와 마이그레이션 가이드가 제공되었습니다. 이는 고객의 장기적인 기술 전략과 운영 안정성에 기여할 수 있는 변화입니다.
 
-마지막으로, 관리 자동화와 보안 강화, 다중 클라우드 및 하이브리드 연동, 생산성 중심 UI/UX 개선, 더 넓게는 다양한 VM 시리즈 및 운영체제의 사용 종료와 마이그레이션 절차까지 실제 엔터프라이즈 현장에 필수적인 “서비스 책임성과 미래지향적 전환”의 메시지가 뚜렷하게 나타나고 있습니다.
+이번 달은 “실질적 운영환경에서 AI와 데이터 기반 혁신을 구현한다”라는 Microsoft의 전략이 구체적이고 다층적으로 추진되는 한 달로 평가됩니다.
+
+
+## 카테고리별 업데이트
 
 ---
 
 ## 🧠 Microsoft Foundry
 
-이번 달 Foundry 카테고리에서는 엔터프라이즈 AI 실무화를 위한 모델 관리, 평가, 배포 자동화, 보안 및 관측성의 통합이 주목됩니다. 새로운 AI 모델(GPT-5.4, Grok, VibeVoice 등) 출시와 음성 기반 에이전트, 실시간 평가·모니터링, 프리미엄 배포옵션, 다양한 오픈모델의 통합 등 기업의 AI 업무 환경을 위한 체계적 운영 솔루션이 정식 지원되었습니다.
+이번 달 Foundry는 AI 에이전트의 기업 적용을 위한 실무적 기능이 정식 지원으로 대거 출시되었습니다. 특히 Foundry Agent Service의 GA와 Voice Live, 평가·감시·추적 기능의 GA, 다양한 최신 AI 모델(GPT-5.4, Grok, NVIDIA Nemotron 등)의 지원이 핵심입니다. 책임 있는 AI, 보안, 실시간 음성·다중모달 지원 등 기업의 실제 운영 요구에 맞는 확장성과 품질 관리가 강조되고 있습니다.
 
-### [GPT-5.4 모델 정식 지원](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-gpt-5-4-in-microsoft-foundry/ba-p/4499785)
-GPT-5.4, GPT-5.4 Pro, 미니/나노 모델 등 실무 환경에 최적화된 신형 AI 모델이 Foundry에 정식 지원되었습니다. 복잡한 이유 추론, 멀티에이전트 워크플로우, 고도 분석 등 엔터프라이즈 전용 기능이 강화됐으며, 실시간/분류/추론 시나리오별 다양한 모델 선택과 비용 최적화가 가능합니다.
+### [Foundry Agent Service 정식 지원: 엔터프라이즈급 보안/관찰성/실시간 음성](https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/)
+- 엔터프라이즈급 AI 에이전트 플랫폼 출시, 프라이빗 네트워킹, 실시간 음성, 철저한 평가와 관찰성 기능 제공.
 
-### [Foundry Agent Service 정식 지원 및 음성 라이브 공개](https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/)
-진화된 Foundry Agent Service가 정식 지원(GA)되며, Voice Live와 프라이빗 네트워킹, 고품질 평가·모니터링 등 다양한 기능이 통합되었습니다. 실시간 음성 기반 AI 에이전트 개발이 급격히 용이해졌으며, 엔터프라이즈 보안과 평가체계 역시 기본 제공됩니다.
+### [GPT-5.4와 GPT-5.4 Pro 정식 지원](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-gpt-5-4-in-microsoft-foundry/ba-p/4499785)
+- 최신 고급 AI 모델 GA, 도구 통합·장기 맥락·실행 신뢰성·생성물 품질 등 업무 환경 최적화.
 
-### [AI 에이전트 평가, 모니터링 및 추적 정식 지원](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/generally-available-evaluations-monitoring-and-tracing-in/ba-p/4502760)
-Foundry Control Plane와 Azure Monitor 연동을 통해 에이전트 품질 모니터링, 실시간 평가, 트레이스 분석이 일원화되었습니다. 기업 운영 환경에서 안전, 품질, 성능의 지속적 개선이 가능해지며, CI/CD 파이프라인과 연계한 품질 게이트를 쉽게 적용할 수 있습니다.
+### [Voice Live 기반 음성 네이티브 에이전트 미리 보기](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/public-preview-voice-native-agents-in-microsoft-foundry/ba-p/4502756)
+- 실시간 음성 대화 에이전트 개발환경 지원, 다국어·멀티모달·엔터프라이즈 보안 및 트래픽 품질 평가.
 
-### [VibeVoice ASR 및 다수 신규 모델 배포](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-vibevoice-asr-longform-structured-speech-recognition/ba-p/4501276)
-장시간 음성 인식, 화자 구분, 멀티언어 지원 등 VibeVoice ASR을 비롯한 다수 신규 모델이 파운드리 및 Hugging Face 연동으로 배포되었습니다. 생산성 향상, 대규모 음성 처리 및 엔터프라이즈 특화 시나리오에 최적화된 기능이 제공됩니다.
+### [AI 에이전트 운영 품질 평가·감시·추적 기능 정식 지원 및 OpenTelemetry 연계](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/generally-available-evaluations-monitoring-and-tracing-in/ba-p/4502760)
+- 평가/감시/추적 기능 GA, Azure Monitor·Grafana 연동, 자동화 CI/CD 품질 게이트.
 
-### [우수 사례: AI 에이전트의 시뮬레이션 기반 평가 및 개선](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/how-veris-ai-and-lume-security-built-a-self-improving-ai-agent/ba-p/4504424)
-실제 운영 실패 시나리오를 자동으로 시뮬레이션·분석하고, Reinforcement Learning과 프롬프트 자동 최적화로 에이전트 품질을 40% 이상 개선한 사례 발표. Foundry 기반 자동 평가, 최적화 루프, 보안·컴플라이언스 통합의 실제 성공 전략이 제시되었습니다.
-
----
-
-## 🧩 Microsoft Fabric
-
-Fabric 업데이트는 데이터·AI 기반 실무 체계의 구축과 자동화, 워크로드 확장, 멀티환경 통합, ISV/파트너 생태계 강화가 핵심입니다. 데이터통합, 파이프라인 현대화, 실시간 이벤트 기반 데이터 처리, 확장성·보안·운영 관리 기법이 대폭 추가되었습니다.
-
-### [AI Ready: 미러링, Data Factory, 실시간 이벤트 기반 기능 강화](https://blog.fabric.microsoft.com/en-US/blog/fabric-data-factory-at-fabcon-atlanta-built-for-modern-data-integration/)
-Data Factory, 미러링, Eventstreams, 실시간 처리, CDC 연동 등 Fabric 내 데이터 통합·이동 기능이 대폭 강화되어 이기종 데이터/운영환경 통합이 쉽고 빠르게 가능해졌습니다.
-
-### [파트너·ISV 생태계 확장 및 워크로드 관리](https://blog.fabric.microsoft.com/en-US/blog/the-power-of-the-microsoft-fabric-ecosystem-isvs-building-natively-on-fabric/)
-ISV 전용 워크로드 관리, 파트너 솔루션 배포체계, 자동화된 확장 관리 등 Fabric을 통한 맞춤형 솔루션 구축/운영 방식이 정식 지원되어 생태계 혁신을 촉진합니다.
-
-### [실시간 인텔리전스 및 운영시스템 통합](https://blog.fabric.microsoft.com/en-US/blog/industrial-analytics-delivered-at-scale-powered-by-fabric-real-time-intelligence-and-fusion-data-hub/)
-실시간 공정 데이터 분석, 산업 IoT, 실시간 KPI 모니터링을 위한 데이터 허브/지능 플랫폼이 Fabric 기반으로 통합 제공되어 제조·운영현장의 실질적 혁신을 뒷받침합니다.
-
-### [워크스페이스 모니터링 및 대시보드 표준화](https://blog.fabric.microsoft.com/en-US/blog/workspace-monitoring-dashboard-templates-in-microsoft-fabric-eventhouse/)
-Workspace Monitoring 대시보드, 텔레메트리 자동화, 이벤트하우스 기반 대시보드 템플릿 등 Fabric 내 데이터 및 작업관리의 표준화·자동화 기능이 확장되었습니다.
-
-### [데이터플로우 Gen2, 유연한 변수 라이브러리와 진단 도구 추가](https://blog.fabric.microsoft.com/en-US/blog/dataflow-gen2-variable-library-integration-in-microsoft-fabric-generally-available/)
-Dataflow Gen2에 변수 라이브러리 통합, CI/CD 및 ALM 지원, 데이터플로우 진단 도구 등 실무 대규모 환경에 맞는 운영 및 관리 도구가 정식 지원되어 데이터 통합·자동화 관리의 효율성이 개선되었습니다.
+### [Fireworks AI 통합 및 커스텀 모델 임포트 미리 보기](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/announcing-fireworks-ai-on-microsoft-foundry/ba-p/4500950)
+- 고성능 커스텀 오픈소스 AI 모델의 서버리스 인퍼런스 지원, 생산 환경 맞춤 커스텀 모델 배포 실험 가능.
 
 ---
 
-## ⚙️ Azure 인프라 및 컴퓨팅 서비스
+## 📊 Microsoft Fabric
 
-기존 Azure 인프라 서비스에는 스토리지·VM·네트워킹의 성능 최적화, 관리 자동화, 지역 지원 확대, VM 시리즈의 사용 종료 및 마이그레이션 안내 등 엔터프라이즈 운영 책임성이 명확해지는 변화가 이뤄졌습니다.
+Fabric은 AI 조직을 위한 데이터 준비, 확대된 보안, 네트워크 설정, 애널리틱스/대시보드 실시간화까지 다양한 부문에서 정식 지원 기능을 내놓았습니다. ADF/Synapse, 온프레미스 게이트웨이, 자동화 연계 등 데이터 통합과 운영 자동화의 접근성을 크게 높였습니다. Preview 기능도 실시간 이벤트 처리, 다중모달 AI 등 향후 혁신 방향성이 뚜렷합니다.
 
-### [Azure Premium SSD v2, South India 지역 출시](https://azure.microsoft.com/updates?id=559526)
-프리미엄 SSD v2가 South India 지역에 정식 지원되며, SQL Server, SAP, 대규모 빅데이터·분석 등 핵심 워크로드의 저지연·고성능·저비용 스토리지 옵션이 확대되었습니다.
+### [Tonic Textual로 비정형 데이터 AI 준비 지원 (GA)](https://blog.fabric.microsoft.com/en-US/blog/from-restricted-to-ai-ready-preparing-unstructured-data-directly-in-microsoft-fabric-with-tonic-textual-generally-available/)
+- 비정형 데이터에서 AI 활용도를 높일 수 있는 데이터 준비 기능 정식 출시.
 
-### [Azure Container Storage v2.1.0 – Elastic SAN 통합](https://azure.microsoft.com/updates?id=557912)
-Kubernetes/컨테이너 환경에서 Elastic SAN 연동으로 가변적 저장소 관리, 중앙제어, 성능 및 활용률 최적화가 가능해졌습니다.
+### [비즈니스 이벤트 기능/실시간 애플리케이션 미리 보기](https://roadmap.fabric.microsoft.com/?product=real-timeintelligence)
+- Fabric 기반 실시간 이벤트 기반 업무 자동화 기능 preview 출시.
 
-### [Azure Monitor Prometheus, Arc-enabled Kubernetes 권장 알림](https://azure.microsoft.com/updates?id=558825)
-Prometheus 커뮤니티 권장 알림을 Arc-enabled Kubernetes에 원클릭 활성화, 클러스터/노드/포드 수준의 실시간 장애 대응 및 CI/CD 자동화 연동이 가능해졌습니다.
+### [온프레미스 데이터 게이트웨이 자동 업데이트(GA)](https://blog.fabric.microsoft.com/en-US/blog/on-premises-data-gateway-auto-update-admin-triggered-generally-available/)
+- 온프레미스 원격 데이터 연동의 관리 자동화 기능.
 
-### [Azure Red Hat OpenShift, 인도네시아 중앙 지역 지원 및 관리 ID 기능 확대](https://azure.microsoft.com/updates?id=559552)
-Azure Red Hat OpenShift가 인도네시아 중앙에서 정식 지원되며, 관리된 신원 및 워크로드 ID 기능이 추가되어 공공·규제 환경에서 보안 요건을 충족합니다.
+### [워크스페이스 태그로 빠른 검색 및 콘텐츠 관리(GA)](https://blog.fabric.microsoft.com/en-US/blog/find-and-manage-workspaces-faster-with-workspace-tags-generally-available/)
+- 워크스페이스별 메타데이터 태깅으로 데이터 관리 향상.
 
-### [VM/Machine 시리즈 사용 종료 안내 및 마이그레이션 가이드](https://azure.microsoft.com/updates?id=548525)
-HBv2, HC, NP 등 VM 시리즈가 2027년 사용 종료 예정임을 알리고, 최신 HPC VM으로의 마이그레이션을 권장하고 있습니다. Batch, Windows Server 2016 Marketplace 등 다양한 OS/플랫폼의 종료 시기 및 대처 방안도 안내합니다.
-
----
-
-## 💡 데이터베이스 & 관리 자동화
-
-데이터베이스는 Azure SQL, PostgreSQL, Databricks 등 다양한 플랫폼에서 관리 자동화, DevOps, 마이그레이션 지원, 실제 운영자 중심 편의 기능이 크게 확장되었습니다.
-
-### [Azure SQL Database, SSMS와 GitHub Copilot 혁신적 연동](https://azure.microsoft.com/updates?id=558134)
-GitHub Copilot을 SSMS에 통합, 자연어 기반 SQL 코드 생성·수정·최적화가 가능하며, 개발자의 생산성과 협업 능력이 크게 향상됩니다.
-
-### [Databricks Lakebase 및 네트워크 구성 유연화](https://azure.microsoft.com/updates?id=557991)
-Databricks Lakebase가 정식 지원되고, VNet 관리시 유연한 전환/설정이 가능해져 데이터분석·ML 환경의 확장성과 보안이 강화되었습니다.
-
-### [Terraform/Bicep/Ansible 기반 PostgreSQL Elastic Cluster 자동화](https://azure.microsoft.com/updates?id=558145)
-클러스터 프로비저닝·확장·관리 자동화가 각종 IaC도구(Terraform, Bicep, Ansible)로 지원되어 배포관리의 일관성과 신속성이 극대화되었습니다.
-
-### [pgoutput 플러그인 및 AlloyDB/EDB 원천 마이그레이션 지원](https://azure.microsoft.com/updates?id=558846)
-PostgreSQL 온라인 마이그레이션에서 native pgoutput 지원, AlloyDB, EDB 등 다양한 오픈소스 환경에서 Azure로의 신속한 원천 마이그레이션이 가능해졌습니다.
-
-### [Azure SQL Managed Instance, 실시간 변경 이벤트 스트리밍 지원](https://azure.microsoft.com/updates?id=558884)
-Azure SQL MI에서 트랜잭션 커밋 이벤트를 Azure Event Hubs로 실시간 스트리밍, CDC 없이 운영/분석 플랫폼 실시간 연동이 가능해졌습니다.
+### [SQL Server Management Studio(SSMS)·GitHub Copilot 연계(GA)](https://blog.fabric.microsoft.com/en-US/blog/sql-server-management-studio-ssms-22-4-1-and-github-copilot-in-ssms-generally-available/)
+- 친화적 AI 코드 지원·자동화·테스트 기능 등 개발 환경 개선.
 
 ---
 
-## 🔒 네트워킹 및 보안
+## 🛡️ 보안·네트워크·관리
 
-네트워크 및 보안 서비스는 방화벽 및 WAF 관리 강화, Private Link/프라이빗 엔드포인트 확대, 관리형 키 사용, 규제 산업 대응 등 보안의 일관성과 자동화가 핵심입니다.
+이번 달에는 네트워크 격리, IP Firewall, CMK(고객 관리 키), VNET·프라이빗 링크 지원 등 엔터프라이즈 데이터 보호 및 거버넌스 관련 기능이 대거 정식 지원으로 추가됐습니다. Azure Firewall, WAF, 컨테이너·네트워크 관리도 서비스 정책·운영 편의성 강화. 퇴역(retirement) 관련 공지도 운영자 관점에서 중요한 참고 정보입니다.
 
-### [Azure Firewall Draft & Deploy – 정책 관리 혁신](https://azure.microsoft.com/updates?id=558072)
-정책 변경을 드래프트로 준비, 일괄 배포하는 2단계 방식이 도입되어 실운영환경의 장애 리스크와 배포 시간 감소를 실현합니다.
+### [IP Firewall 룰 및 프라이빗 링크 지원](https://blog.fabric.microsoft.com/en-US/blog/workspace-level-ip-firewall-rules-in-microsoft-fabric-generally-available/)
+- Fabric 워크스페이스별 접근 차단 정책 직접 설정 가능.
 
-### [Web Application Firewall DRS 2.2, 규칙 Lifecycle 명확화](https://azure.microsoft.com/updates?id=558016)
-최신 규칙셋 지원 정책 및 Lifecycle(최신 3개 버전만 지원, 정책 자동 관리) 명확화로 보안 업데이트 일관성과 엔터프라이즈 보안 책임 강화.
+### [CMK 기능 추가: Fabric SQL DB에서 직접 관리](https://blog.fabric.microsoft.com/en-US/blog/customer-managed-keys-cmk-in-fabric-sql-database-generally-available/)
+- 조직별 키 관리로 데이터 보안과 규제 대응력 개선.
 
-### [Cosmos DB Mirroring, 프라이빗 엔드포인트 지원](https://azure.microsoft.com/updates?id=558836)
-미러링 데이터의 프라이빗 네트워크 격리, 네트워크 권한통제, 규제 산업에서의 보안 요건 충족 등 보안 중심 데이터 이동의 강화.
+### [VNET Data Gateway 인증서 및 프록시 지원(GA)](https://blog.fabric.microsoft.com/en-US/blog/certificate-and-proxy-support-for-vnet-data-gateway-generally-available/)
+- 엔터프라이즈 환경에서 강한 네트워크 보안 옵션 강화.
 
-### [Azure SQL Database, 버전 없는 투명 암호화 키 지원](https://azure.microsoft.com/updates?id=558183)
-TDE 구성시 버전 없는 키 URI 지원, 키 버전 관리/교체 및 연계운영의 손쉬운 자동화와 안정성 확보.
+### [Azure Firewall Draft & Deploy 기능(GA)](https://azure.microsoft.com/updates?id=558072)
+- 정책 변경 시 실시간 적용 병행, 배포 효율성 대폭 향상.
 
-### [Azure Blob Storage Entra ID 기반 SFTP 연동 (미리보기)](https://azure.microsoft.com/updates?id=558662)
-Entra ID 기반 SFTP 접속 지원, MFA/조건부 접근/외부 계정 연동, RBAC 자동 연계 기능 등 현대적 보안·운영 환경 구현.
-
----
-
-## 🌐 미리 보기/신제품/실험적 기능
-
-본 카테고리는 Azure 및 Fabric에서 미리 보기(Public Preview)로 출시된 신규 기능과 실험적 솔루션을 다루며, 차기 대규모 운영환경을 위한 실질적 혁신 요소들이 등장했습니다.
-
-### [Fabric AI 기능 멀티모달 지원 및 이미지/PDF 추론](https://blog.fabric.microsoft.com/en-US/blog/unlock-insights-from-images-and-pdfs-with-multimodal-support-in-fabric-ai-functions-preview/)
-Notebooks, pandas/Spark 환경에서 이미지, PDF 등 비정형 데이터에 AI 기능(분류, 요약, 감정분석) 통합. 데이터 사이언스 실무 편의성 대폭 개선.
-
-### [파운드리 음성 네이티브 에이전트, 실시간 대화/동작 지원(공개 미리보기)](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/public-preview-voice-native-agents-in-microsoft-foundry/ba-p/4502756)
-음성 기반 실시간 AI 에이전트 개발 지원, Voice Live API로 140개 언어·700개 음성, 자연스러운 대화 및 다양한 산업 시나리오 즉시 적용.
-
-### [Azure Monitor, OpenTelemetry Collector 및 OTLP 데이터 수집 지원(미리보기)](https://azure.microsoft.com/updates?id=559273)
-OpenTelemetry Collector와 직접연동, OTLP 로그/트레이스/메트릭 수집, PromQL 질의·알림, 로깅/모니터링/합성까지 클라우드 네이티브 운영 환경 유기화.
-
-### [Azure Storage Mover, AWS S3 Private 네트워크 데이터 마이그레이션(미리보기)](https://azure.microsoft.com/updates?id=558651)
-AWS S3 Private VPC에서 Azure Blob으로 직접 데이터 이동, 보안/컴플라이언스·자동화 관리·실시간 모니터링까지 멀티클라우드 운영 편의성 확대.
-
-### [Power Query API, 프로그램적 데이터 변환(Preview)](https://blog.fabric.microsoft.com/en-US/blog/execute-power-query-programmatically-in-microsoft-fabric/)
-Power Query를 API로 직접 호출, 자동화된 데이터 변환·품질관리·데이터 엔지니어링 워크로드 일원화가 가능해졌습니다.
+### [Azure Web Application Firewall DRS 2.2 규칙 지원 정책 변경](https://azure.microsoft.com/updates?id=558016)
+- WAF 관리 규칙 세트 수명/업데이트 주기 명확화, 지원 종료 일정 사전 안내.
 
 ---
 
-## 📣 서비스 사용 종료 및 리타이어먼트
+## 💡 데이터·분석·DevOps
 
-이번 달에도 다양한 서비스/VM 시리즈/운영체제의 사용 종료 및 마이그레이션 정보가 공지되었습니다. 대규모 데이터 현장과 인프라 현대화 프로젝트에 꼭 필요한 사전 준비와 대처 전략이 명확히 제시됩니다.
+Azure SQL, Databricks, PostgreSQL 등 데이터베이스 서비스에서 GA 및 미리 보기 업데이트가 다양하게 출시되었습니다. 자동 인덱스 최적화, Hyperscale 확장, 다양한 마이그레이션 경로, 데이터 이동 자동화, DevOps/CI/CD 연계, 프로파일링 및 쿼리 최적화 등 기업 데이터 환경 운영 효율성 강화가 두드러집니다. 또한 운영 자동화(Azure Monitor, Prometheus)와 Spot/Low-Priority VM 마이그레이션 등 DevOps 개선도 눈에 띕니다.
 
-### [Cosmos DB for PostgreSQL 지원 종료 안내](https://azure.microsoft.com/updates?id=556085)
-2029년 3월 31일, Cosmos DB for PostgreSQL 서비스 지원 종료 예정. Elastic Cluster로 무중단 마이그레이션 권장.
+### [Azure SQL Database 정식 지원 및 관리 키, 자동 인덱싱/확장, 마이그레이션 등 신기능](https://azure.microsoft.com/updates?id=558121)
+- SQL 프로젝트/쿼리 개선, Hyperscale 시리즈 확장, 업그레이드/보안 강화.
 
-### [Azure Sphere, 2031년 7월 31일 서비스 종료 예정](https://azure.microsoft.com/updates?id=557123)
-마이크로컨트롤러 보안 플랫폼 Azure Sphere, 하드웨어 리디자인 및 Azure IoT, 3rd Party 대안 검토 필요.
+### [Azure Databricks Lakebase 정식 지원](https://azure.microsoft.com/updates?id=557991)
+- OLTP 및 분석 데이터 통합, AI 에이전트 활용 최적화.
 
-### [Batch Low-Priority VM, Spot VM 자동 마이그레이션](https://azure.microsoft.com/updates?id=543279)
-2026년 3월, Batch Low-Priority VM이 Spot VM으로 시스템 전환 및 과금, 기존 API 연동 구조 자동 대응.
+### [Databricks Workspace 네트워크 설정 및 Lakeflow Connect 무료 티어](https://azure.microsoft.com/updates?id=558810)
+- Workspace 네트워크 직접 관리, 데이터 인입 비용효율적 활용.
 
-### [VM/Marketplace 이미지, OS 종료 일정 안내 및 대체 가이드](https://azure.microsoft.com/updates?id=549077)
-Windows Server 2016 Marketplace 이미지 2027년 1월 12일 지원 종료, 최신 Windows Server 또는 커스텀 이미지 마이그레이션 권장.
+### [Postgresql/EBD/AlloyDB 등 마이그레이션 신기능](https://azure.microsoft.com/updates?id=558865)
+- 엔터프라이즈 전환시 데이터 이동/마이그레이션의 안정성·효율성 증대.
 
-### [Prometheus Sidecar for remote-write 사용 중단(2027년 3월 31일)](https://azure.microsoft.com/updates?id=550519)
-Prometheus remote-write sidecar가 사용 중단되어, 직접 remote-write 설정으로 변경 필요.
+### [Azure Monitor Prometheus 추천 알림 및 Log Analytics 요약 rules 개선](https://azure.microsoft.com/updates?id=558825)
+- 모니터링/프로메테우스 자동화, 데이터 요약 규칙 실패 자동 재시도.
 
 ---
 
-## 🏢 DevOps, 자동화, 개발 환경 확장
+## 🤖 AI·모델 운영·음성/멀티모달
 
-DevOps와 자동화, 개발자 친화적 환경 구성 역시 다양한 신규 기능이 출시되었습니다. PowerShell, VS Code, CI/CD 연동, Bulk API 등 실무 생산성 향상에 초점이 맞춰진 기능들이 주로 확인되었습니다.
+Azure AI Service 및 Microsoft Foundry를 활용한 최신 LLM, 음성 합성, 모델 평가/운영 측면의 발전이 집중적으로 이루어졌습니다. Neural HD TTS, VibeVoice ASR 등 AI 기반 음성 합성·인식 모델의 품질 향상과 지역 커버리지 확대가 두드러지며, 다양한 모델의 GA, 커스텀 모델 운영, 운영간 품질 평가 및 관찰성 기능이 실무에서 바로 사용될 수 있는 수준에 도달했습니다.
 
-### [PowerShell 모듈로 온프레미스/VNET 데이터 게이트웨이 자동 관리](https://blog.fabric.microsoft.com/en-US/blog/powershell-module-for-gateways-with-expanded-automation-capabilities-generally-available/)
-PowerShell 기반 게이트웨이 관리 자동화, 스크립팅을 통한 배포·운영 효율화/보안 자동화 실현.
+### [Azure Speech Neural HD 음성합성 2.5 업데이트 (GA)](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/azure-speech-neural-hd-text-to-speech-recent-voice-updates/ba-p/4505380)
+- 자연스러운 억양, 다중 스타일, 다국어 커버리지, 가격 인하.
 
-### [VS Code에서 SQL 데이터베이스 배포 및 Bulk API 지원](https://blog.fabric.microsoft.com/en-US/blog/deploy-sql-databases-in-fabric-from-vs-code-no-more-context-switching/)
-VS Code에서 직접 SQL 배포, Bulk Import/Export API로 다량 데이터·워크스페이스 관리 자동화가 실무 환경에 쉽게 적용됩니다.
+### [Microsoft Foundry 기반 VibeVoice ASR 연속 음성 인식 모델(GA)](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-vibevoice-asr-longform-structured-speech-recognition/ba-p/4501276)
+- 최대 60분 연속 음성 인식, 화자 구분/타임스탬프, 멀티언어 코드스위칭/실시간 대응.
 
-### [SQL 프로젝트 기반 데이터베이스 DevOps 및 Schema Designer AI 연동(Preview)](https://azure.microsoft.com/updates?id=558155)
-Schema-as-code, CI/CD, 코드 품질 체크, AI 기반 스키마 디자인 지원으로 데이터베이스 개발과 DevOps가 통합되었습니다.
+### [AI 평가/관찰성 및 책임있는 AI 관리 강화 (GA)](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/generally-available-evaluations-monitoring-and-tracing-in/ba-p/4502760)
+- LLM 자동 평가, Azure Monitor 연동, 품질 기준 자동화/실시간 추적.
 
-### [Databricks Lakeflow Connect – SaaS 무료 tier 및 데이터 유입 확장](https://azure.microsoft.com/updates?id=558810)
-Databricks에서 SaaS 데이터 무료 유입, Unity Catalog와의 통합 및 AI/분석 워크로드 가속화.
+### [Grok 4.0 GA 및 Grok 4.1 Fast 모델 출시](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/grok-4-0-goes-ga-in-microsoft-foundry-and-grok-4-1-fast-arrives/ba-p/4497964)
+- 다중모델 추론, 속도/확장성/안전성 보증, 다양한 엔터프라이즈 AI 경험 지원.
 
-### [Azure Monitor Log Analytics Summary Rule, Retry bin 기능 도입](https://azure.microsoft.com/updates?id=558656)
-요약 규칙 집계 실패시 bin-level 재시도 기능 추가로 데이터 결손 없이 로그 집계 및 분석 자동화 실현.
+### [NVIDIA Nemotron/NIM, IBM Granite, Sarvam 등 최신 AI 모델 GA](https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/now-in-foundry-nvidia-nemotron-3-super-120b-a12b-ibm-granite-4-0/ba-p/4506917)
+- 장문 맥락/이중모델/추론, 멀티언어/음성 처리, 엔터프라이즈급 배포 지원.
+
+---
+
+## 🔗 컨테이너·VM·스토리지·운영 자동화
+
+AKS, VM, 스토리지 등 인프라/컨테이너 영역에서는 네트워크/운영 감시, GPU/스토리지 성능 개선, 지원 종료 VM/OS에 대한 마이그레이션 권장, 프리뷰 기능으로 운영 효율성·보안 강화에 초점을 맞추었습니다. 최신 컨테이너 네트워크 감시, 모니터링, 실시간 알림, VM/Batch 마이그레이션, 스토리지 이동 자동화 등이 운영 안정성을 높이는 움직임입니다.
+
+### [AKS 컨테이너 네트워크 로그/메트릭 필터링 정식 지원](https://azure.microsoft.com/updates?id=557892)
+- 네트워크 트래픽 실시간 분석 및 장애 진단.
+
+### [Azure Premium SSD v2 South India 지역 GA](https://azure.microsoft.com/updates?id=559526)
+- 최신 스토리지 지역별 확장, IO 성능 강화.
+
+### [Azure Sphere, VM, Batch 등 서비스 지원 종료(퇴역) 안내](https://azure.microsoft.com/updates?id=557123)
+- AV36P/AV52, HBv2, NP, HC 계열 VM 및 Windows Server 2016 등 장기 지원 종료 일정 공지.
+
+### [Ephemeral OS Disk, GPU/네트워크/클러스터 관리 프리뷰](https://azure.microsoft.com/updates?id=559322)
+- VM/VMSS 성능 향상, 운영 신속성 및 안정성 강화.
+
+### [Azure Storage Mover, AWS S3-Blob 프라이빗 데이터 이동 프리뷰](https://azure.microsoft.com/updates?id=558651)
+- 멀티클라우드 데이터 이동을 자동화·보안 강화.
+
+---
+
+## 🗃️ 마이그레이션·지원 종료(retirement)·특별 공지
+
+이번 달은 장기 지원 종료(retirement) 및 마이그레이션 정책에 대한 명확한 안내가 다수 이루어졌습니다. Cosmos DB for PostgreSQL, AV36P/AV52, Windows Server 2016 Marketplace 이미지, Azure Sphere, Batch Low-Priority VM 등 다양한 서비스가 향후 수년에 걸쳐 순차적으로 지원 종료/대체됨을 공지하고, 전환 가이드와 마이그레이션 도구를 안내합니다. 이를 통해 고객의 운영 안정성, 장기 기술 전략 수립에 도움이 될 수 있습니다.
+
+### [Azure Cosmos DB for PostgreSQL, 2029년 3월 지원 종료 안내](https://azure.microsoft.com/updates?id=556085)
+- PostgreSQL Elastic Cluster로 이전 권장, 데이터 이동 실무 가이드 제공.
+
+### [Azure Sphere 2031년 지원 종료, Azure IoT 대체 포함](https://azure.microsoft.com/updates?id=557123)
+- IoT 서비스 전략 전환, 하드웨어/라이선스 매입 일정 안내, 대체 솔루션 안내.
+
+### [AV36P/AV52, HBv2, NP, HC 계열 VM 2027~2029년 지원 종료](https://azure.microsoft.com/updates?id=557094)
+- VM 유형별 단계적 지원 종료/이동 가이드 강화.
+
+### [Emissions Impact Dashboard for Azure 2027년 지원 종료](https://azure.microsoft.com/updates?id=558278)
+- 신규 Carbon Optimizer 솔루션으로 전환 유도.
+
+### [Azure Policy 빠른 적용 및 Login/Logout workaround 은퇴](https://azure.microsoft.com/updates?id=558102)
+- 정책 적용 성능 개선, 기존 수동 워크어라운드 폐기.
 
 ---
 
 ## 총평 및 다음 달 전망
 
-2026년 3월 Azure 업데이트는 '실무 최적화와 AI 실무화의 새로운 표준'을 제시했습니다. Microsoft Foundry와 Fabric이 데이터·AI 기반 실무 환경에 확실한 체계와 관리자동화, 품질평가·관측성, 보안·컴플라이언스를 일원화하며, 단순 PoC를 넘어서 대규모 실운영까지 성장할 수 있는 구조가 강조되었습니다. 인프라와 데이터베이스, 네트워킹·보안의 기초체계 역시 미리보기·신제품·운영관리 기능의 대대적 혁신과 더불어, 장기적 서비스 종료 안내 및 대체 기술 확보가 병행되어 기업의 미래 전략에 실질적 도움을 주는 정책 변화가 지속되었습니다.
+3월 Azure 업데이트는 AI 에이전트의 실제 운영환경 구현, 데이터 보호·거버넌스 강화, 운영 자동화, 그리고 최신 인프라 마이그레이션 지원에 집중된 전략적 변화를 보여줍니다. Microsoft Foundry와 Fabric의 정식 지원 기능 확대는 AI와 데이터 기반 혁신을 실무에 단숨에 적용할 수 있게 하였으며, 평가·관찰성·운영 효율·보안 등 장기적인 품질 관리를 위한 인프라적 기반도 견고하게 마련되었습니다.
 
-다음 달에는 엔터프라이즈 AI 자동화와 데이터 통합, 워크로드 관리, 보안 접근 제어, 멀티클라우드 연동 및 운영 자동화의 추가 혁신이 기대됩니다. 미리보기로 출시된 기능들의 정식 지원(예: AKS 네트워킹, SFTP Entra ID, Storage Mover 등), 데이터플로우 및 파이프라인 관리 개선, 새로운 모델·BI 도구·AI 에이전트 운용 방식의 공식화가 전망됩니다. 전반적으로 “실무에서 검증된 운영관리 체계와 데이터·AI 혁신”이 계속되는 흐름이 유지될 것으로 예측됩니다.
+개발자와 데이터 관리자, AI·운영 전문가 모두에게 실무적 가치가 높은 기능이 정식 지원되었고, 미리 보기 기능은 데이터 처리·AI 적용·자동화 방식의 미래를 제시하며 업계 혁신을 이끌고 있습니다. 지원 종료(retirement) 정책은 앞으로의 기술 전략 수립과 안정적 전환을 위한 명확한 가이드를 제공합니다.
+
+다음 달은 AI 기반 자동화·보안·모델 운영 분야 추가 혁신, Fabric과 Foundry 플랫폼의 기능 확장, 실시간 데이터 처리/모니터링·배포 자동화 영역에서 더 다양한 기능이 나오며, 리전·서비스 확장, 각종 미리 보기 기능의 정식 지원 전환이 기대됩니다. Azure 는 실제 서비스 운영에 필수적인 품질, 보안, 자동화, 효율성의 기준을 끊임없이 높여갈 것입니다.
