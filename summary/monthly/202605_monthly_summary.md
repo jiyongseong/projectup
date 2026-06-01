@@ -1,175 +1,161 @@
 # Azure 월간 업데이트 요약 - 2026년 05월
 
-## 주요 트렌드 및 인사이트
+## 주요 트렌드 및 핵심 인사이트
 
-2026년 5월, Microsoft Azure는 클라우드 인프라의 운영 효율성과 데이터 관리, 보안, 네트워킹, AI/머신러닝, 애플리케이션 현대화, 그리고 개발자 생산성에 중점을 둔 다양한 업데이트를 발표했습니다. Azure의 서비스 전반에 걸쳐 모듈화·자동화된 운용 방안이 확산되었으며, 최신 하드웨어 인프라와 AI 환경 지원 강화, 데이터 이동 및 통합의 단순화, 네트워크 관리는 물론, 엔터프라이즈 규모의 확장성과 컨테이너·서버리스 컴퓨팅 환경 개선, 그리고 개발자 생태계 개방 등이 두드러졌습니다.
+2026년 5월의 Azure 업데이트는 ‘미리 보기’ 기능과 ‘정식 지원’ 기능 모두에 걸쳐 클라우드 네이티브 환경의 가속, 스토리지 서비스의 혁신, 네트워크 및 보안의 대대적 확장, 완전 자동화 관리와 협업 효율 증대라는 전반적인 흐름이 뚜렷합니다.
 
-특히 **네트워크와 보안** 환경에서 Application Gateway, VPN Gateway, Azure Virtual Network Manager와 같은 핵심 서비스의 정식 지원이 확대되어, 서비스 메쉬 통합, 자동 인증, 고도화 된 네트워크 분석 기능 및 정책 기반 가시성 강화가 이뤄졌습니다. 또한, Azure의 프라이빗 오퍼·마켓플레이스 확장 및 자동화, Azure NetApp Files·Elastic SAN 등 고성능 스토리지 서비스의 기능 진화, AKS·Application Insights·Azure Functions 중심의 클라우드 네이티브 모니터링과 관측성 개선이 강조되었습니다.
+특히 AI 및 컨테이너 기반의 서비스와 인프라 관리 영역에서 자동화 및 보안을 혁신적으로 강화하는 기능과, 개발자∙운영자 모두를 위한 경험 최적화가 눈에 띕니다. 멀티 클라우드∙하이브리드 환경 지원은 더욱 정교해졌으며, 애플리케이션과 네트워크 설계의 유연성이 향상되고, 다양한 미리 보기 기능을 통해 대규모 확장/운영 시의 복잡성을 크게 줄이고 있습니다.
 
-AI와 데이터 부문에서는 Cosmos DB와 NetApp Files의 AI·분석 서비스와 직접 연동 가능성이 확대되면서, 데이터 기반 솔루션의 비즈니스 가치 실현이 가속화될 것으로 전망됩니다. **한국 지역에서는 Confidential Computing for Azure Service Bus Premium 기능의 정식 지원이 발표되어, 데이터 보호 수준이 한 단계 높아졌습니다.**
+스토리지 영역에서는 Azure NetApp Files, Elastic SAN, Blob Storage 등 데이터 이동성, 확장성, 고성능 연계가 강조됐으며, 데이터 분석/AI 워크로드를 위한 연동성과 새로운 API·SDK 도입도 적극적으로 이루어졌습니다.
 
-업데이트들은 단순한 신기술 도입에 그치지 않고, 거버넌스 강화, 빌링 효율화, 보안 규정 준수, 운영 자동화에 대한 수요에 부합하는 형식으로 이루어진 점이 이번 달의 핵심 인사이트입니다.
+네트워크 부문에서는 가상 네트워크 관리·시뮬레이션 및 보안 규칙 영향 분석이 ‘운영 리스크 감소’와 ‘자동화된 정책 관리’라는 방향성을 보입니다. VPN, Front Door, Event Grid, Site-to-Site 인증 등 신뢰성과 보안, 실시간성, 통신 유연성이 빠르게 업그레이드되고 있습니다.
 
----
+Azure Marketplace와 협력 생태계 강화를 위한 SaaS 서비스 즉시 활성화, 다수 파트너사 오퍼 관리 편의성도 강조되었으며, 중대한 지원 종료(Retirement) 공지와 함께 지속적인 서비스 혁신으로 이전 대비 한층 도약한 서비스를 예고합니다.
 
-## 1. ☁️ 인프라·컴퓨트(Compute/VM)
-
-이번 달 인프라스트럭처·컴퓨트 부문은 최신 프로세서 기반의 VM 신제품 출시, VM 복구 자동화, 예약 인스턴스 정책 변화 등 대규모 워크로드 수용 및 TCO 최적화, 고가용성 인프라 운용 관점에서 의미 있는 진전이 있었습니다.
-
-### [Azure Dl/D/E v7 Virtual Machines](https://azure.microsoft.com/updates?id=560734)
-최신 Intel Xeon 6 기반의 v7 VM 시리즈 정식 지원. 최대 20%의 더 높은 컴퓨팅 성능, 최대 372 vCPU 및 2.8TiB 메모리, AI 추론 가속 및 차세대 스케일/스토리지/네트워킹 성능 제공.
-
-### [Bulk Restore for Azure Virtual Machines using Azure Backup](https://azure.microsoft.com/updates?id=561373)
-VM 대량 복구(최대 100개 동시) 기능 미리 보기 제공. 장애·랜섬웨어·장애 복구 시 빠르고 일관된 복원 자동화 지원.
-
-### [Azure Reserved Virtual Machines Instances for select VM series 지원 종료](https://azure.microsoft.com/updates?id=560948)
-2026년 7월 1일부터 일부 VM 시리즈(Av2, Dv2, F, Lsv2 등) 예약 인스턴스 신규·갱신 중단. 마이그레이션 가이드 제공 및 기존 리소스는 약정 종료 시점까지 유지.
-
-### [Azure Premium SSD v2 Disk 일본 데이터센터 세 Availability Zone 지원](https://azure.microsoft.com/updates?id=561814)
-일본 West 지역 내 모든 Zone에서 Premium SSD v2 제공. 고성능 블록 스토리지 및 미션 크리티컬 엔터프라이즈 워크로드 최적화.
-
-### [Azure Functions support for Java 25 정식 지원](https://azure.microsoft.com/updates?id=560879)
-Function 앱의 최신 Java 25 버전 지원 개시. Flex Consumption 등 다양한 호스팅 옵션에서 사용 가능.
+실제 적용 관점에서, 한국을 비롯해 다양한 지역에 맞춘 데이터 보호, 컴플라이언스, 보안, 네트워크 이중화 증진 역시 계속 진화하고 있음을 확인할 수 있습니다. 장기적 관점에서는 엔터프라이즈 AI/데이터 혁신, 클라우드 운영 자동화, 하이브리드 업무 환경 효율화가 앞으로의 Azure의 핵심 성장축임을 알 수 있습니다.
 
 ---
 
-## 2. 🔒 네트워크·보안
+## 서비스 및 인프라
 
-서비스 메쉬, 인증, 정책 자동화 등 대규모·다계층 네트워크 환경에서 운영 편의성과 보안·분석 기능이 집중적으로 강화되었습니다.
+실제 클라우드 운영·사용성을 높이는 서비스/인프라 관련 주요 업데이트입니다.
 
-### [Application Gateway for Containers – Istio 서비스 메쉬 통합](https://azure.microsoft.com/updates?id=564714)
-서비스 메쉬 보안 연결(mTLS) 및 인증서 자동 관리, Istio-기반 AKS 서비스와 즉시 통합, Ingress 경로 일원화 등 클라우드 네이티브 아키텍처 효율 증대.
+### [Application Gateway for Containers – Istio 서비스 메시 통합](https://azure.microsoft.com/updates?id=564714)
+Application Gateway for Containers와 Istio 서비스 메시의 정식 연동을 통해, 인증서 관리 자동화, 단일 진입점, 운영 복잡성 감소 등 클라우드 환경 내 마이크로서비스 보호와 신속한 서비스 연동이 강화되었습니다.
 
-### [site-to-site VPN connections with certificate authentication](https://azure.microsoft.com/updates?id=562705)
-VPN Gateway에서 인증 기반 VPN 연결 지원. X.509 인증서 체인 기반 신뢰성 강화 및 IKE 협상 내 보안성 향상.
+### [Azure Functions Durable Task Scheduler 소비형 SKU 출시](https://azure.microsoft.com/updates?id=560957)
+Storage 관리나 용량 계획 없이도 내구성 있는 워크플로우/AI 오케스트레이션을 상황별로 사용할 수 있으며, 초당 과금 체계로 AI 에이전트, 데이터 파이프라인, 이벤트 구동형 업무에 매우 적합합니다.
 
-### [Azure Virtual Network Manager rule impact analyzer](https://azure.microsoft.com/updates?id=562010)
-시뮬레이션 기반 보안 규칙 영향 분석, 트래픽 흐름 예측 및 장애 방지, 설계/운영 자동화 지원.
+### [Azure Front Door WebSocket 지원](https://azure.microsoft.com/updates?id=562548)
+Front Door Standard 및 Premium에서 WebSocket이 기본 활성화되어 실시간 쌍방향 데이터 송수신이 필요한 대화형/게임/금융 등 시나리오에서 효율적이고 확장성 높은 아키텍처 구현이 가능합니다.
 
-### [Azure Virtual Network updates – default limits increased](https://azure.microsoft.com/updates?id=562695)
-NSG 및 라우팅 테이블 한도가 대폭 상향. 대규모 네트워크/보안 정책 구현 및 엔터프라이즈 운영 최적화.
+### [Azure Virtual Network Manager 규칙 영향 분석 GA](https://azure.microsoft.com/updates?id=562010)
+보안 규칙 및 네트워크 구성 변경 시 실제 네트워크 트래픽에 미치는 영향을 사전 시뮬레이션하여 운영 안정성 및 취약점 관리 효율이 대폭 향상되었습니다.
 
-### [User Groups and IP address pools for P2S connections](https://azure.microsoft.com/updates?id=564460)
-VPN Gateway에서 사용자 그룹별 IP 풀 할당 기능 추가, 그룹 기반 세분화 및 세분화 보안 정책 구현 가능.
-
----
-
-## 3. 📊 데이터·스토리지·이동 & 관리
-
-미션 크리티컬 데이터 관리와 서비스 통합, 대규모 마이그레이션, 다양한 개발 언어 SNS/SDK 지원 등이 대거 확대되었습니다.
-
-### [Azure Blob Storage SDK for Rust 정식 지원](https://azure.microsoft.com/updates?id=562516)
-Rust 환경에서 생산성 높은 안정적 Blob 스토리지 연동 SDK 출시. 인증, 자동 재시도, 분산 추적 등 최신 기능 제공.
-
-### [Mock runs for Azure Storage Actions](https://azure.microsoft.com/updates?id=559494)
-모의 실행을 통한 대규모 작업 검증. 실제 데이터 변화 없이 시뮬레이션 리포트로 정책 효과 및 파일 처리 건전성 체크 가능.
-
-### [Azure Storage Mover Blob-to-Blob migration](https://azure.microsoft.com/updates?id=562753)
-에이전트리스 Blob 간 직접 이관 지원. 대용량/병렬 데이터 마이그레이션 자동화, 작업 관리·진행 추적 기능 통합.
-
-### [Azure NetApp Files cache volumes 정식 지원](https://azure.microsoft.com/updates?id=562259)
-가장 빈번히 접근되는 데이터만 클라우드 내 캐시로 보유, WAN 대역폭/지연비용 절감 및 분산 파일 액세스 최적화.
-
-### [Prefix-scoped access for User Delegation SAS](https://azure.microsoft.com/updates?id=561257)
-Blob SAS 권한 부여 범위를 프리픽스(가상 디렉터리) 단위로 세분화, 유연한 보안 정책 및 다중 사용자 환경 지원.
+### [Multiparty Private Offers, Microsoft Marketplace 30개국 확장](https://azure.microsoft.com/updates?id=563016)
+Marketplace 파트너들이 다국적 고객/파트너와 협력적 클라우드∙AI 도입을 효율적으로 지원하도록 다자간 프라이빗 오퍼 적용 국가가 대폭 확대되었습니다.
 
 ---
 
-## 4. 🛡️ AI, 데이터베이스, 앱/서비스 통합
+## 스토리지 및 데이터 서비스
 
-AI 기반 서비스 연동, NoSQL 데이터플랫폼의 에이전트 활용, 서비스 메시징 보안, API 통합 기능 강화 등 엔터프라이즈 개발 환경 최적화 방향이 두드러집니다.
+최신 스토리지, 데이터 관리 및 혁신적 활용 방안과 관련한 중요 소식입니다.
 
-### [langchain-azure-cosmosdb Python 패키지 정식 지원](https://azure.microsoft.com/updates?id=562074)
-LangChain/LangGraph와 Cosmos DB의 벡터(하이브리드) 검색, 캐시, 챗 히스토리 등 긴밀한 워크플로우 통합.
+### [Azure Blob Storage SDK for Rust 출시](https://azure.microsoft.com/updates?id=562516)
+보안, 신뢰성, 분산 추적 등 엔터프라이즈 품질 요구에 대응하는 Rust용 Blob Storage SDK가 정식 지원되어, 다양한 언어 기반의 통합 관리가 한층 강화되었습니다.
 
-### [Confidential computing for Azure Service Bus Premium (Korea Central)](https://azure.microsoft.com/updates?id=561942)
-하드웨어 기반 TEE 환경에서 메시지 데이터 보호. 암호화 가공 상태 데이터까지 보안 수요 부응, 기존 앱 변경 불필요.
+### [Azure NetApp Files 캐시 볼륨 정식 지원](https://azure.microsoft.com/updates?id=562259)
+가장 빈번히 접근하는 데이터만 클라우드에 캐싱하여 WAN 지연 및 비용을 절감, 파일 배포 및 성능을 극대화하는 신규 캐시 볼륨 기능이 도입되었습니다.
 
-### [Azure Event Grid releases – MQTT 기능 향상](https://azure.microsoft.com/updates?id=562240)
-MQTT retain/공유 구독/HTTP 퍼블리시, IoT 실시간 애플리케이션을 위한 확장된 연결 및 백엔드 통합.
+### [Azure Elastic SAN 단일 볼륨 스냅샷 지원](https://azure.microsoft.com/updates?id=560899)
+효율적이고 특정 시점 복구가 가능한 개별 SAN 볼륨 스냅샷 지원으로 백업·복원·이관 업무 신속화와 비용 효율성이 크게 높아집니다.
 
-### [Application Insights Auto-instrumentation for AKS apps](https://azure.microsoft.com/updates?id=562049)
-AKS 앱에 대한 소스코드 수정 없는 자동 계측, Java/Node.js 지원·분산 추적·트랜잭션 진단 강화.
+### [Azure Storage Mover Blob-to-Blob 마이그레이션 기능](https://azure.microsoft.com/updates?id=562753)
+Azure Blob 간 직접 이동이 완전 관리형으로 제공되어 대규모 데이터 이전 및 병렬 동작, 가시적 관리가 매우 쉬워졌습니다.
 
-### [Multiparty private offers in Microsoft Marketplace expands](https://azure.microsoft.com/updates?id=563016)
-마켓플레이스 내 다자간 프라이빗 오퍼 30개국 확장. 파트너 협업 통한 신규 시장 진출 및 고객 신뢰 기반 클라우드·AI 도입 확대.
-
----
-
-## 5. 🏗️ 스토리지·파일서비스·Elastic SAN·Azure Files
-
-트랜잭션 파일 IO·데이터 분산 캐시·파일 교차 활용 및 인증 전략 등 기존 외부 스토리지 통합부터 최신 하이엔드 SAN, 데이터 복원 등 현장 요구에 부응한 업그레이드가 강화되었습니다.
-
-### [Azure Elastic SAN support for AVS Gen2 Private Cloud](https://azure.microsoft.com/updates?id=560909)
-ExpressRoute 없이 간편 연결 및 제한 없는 스루풋 제공, AVS 고성능 워크로드 최적.
-
-### [Azure NetApp Files object REST API 정식 지원](https://azure.microsoft.com/updates?id=562254)
-S3 호환 API 기반 Fabric/AI/다양한 Azure 서비스와 심리스한 연동 및 데이터 복제 없이 신규 분석 활용 확대.
-
-### [Single Volume Snapshots on Azure Elastic SAN](https://azure.microsoft.com/updates?id=560899)
-개별 SAN 볼륨별 증분 스냅샷. 복원·이관·백업 작업 용이성 향상 및 비용·운영 효율화.
-
-### [Managed Identity Support 및 Entra-only identities with Azure Files](https://azure.microsoft.com/updates?id=562359)
-Azure Files SMB 공유 접근 시 Entra ID/Managed Identity 기반 인증. 액세스 키 없는 멀티리전 보안, RBAC 및 규제 준수 강화.
-
-### [Support for workloads with large files in Azure NetApp Files](https://azure.microsoft.com/updates?id=561722)
-64TiB 단일 파일 볼륨 지원, AVS 대용량 워크로드 및 파일 기반 빅데이터 서비스 적합성 제고.
+### [Prefix-scoped User Delegation SAS 권한 부여](https://azure.microsoft.com/updates?id=561257)
+SAS 토큰이 컨테이너·개별 Blob 외에도 가상 디렉터리 기반 범위로 확장되어, 대용량 멀티 테넌트 환경에서 접근 통제와 보안이 최적화됩니다.
 
 ---
 
-## 6. 🛠️ 개발·운영·거버넌스·비용관리
+## 네트워크 및 보안
 
-재해 복구 DR 지원 개선, 모의 실행/리스크 프리뷰, 비용 정책·SLA 관리 자동화, MarketPlace 자동구독, 운영/감사 기능이 동반 강화되었습니다.
+네트워크 성능, 보안 정책, 관리 효율화와 관련된 중대 업데이트 중심입니다.
 
-### [Azure Site Recovery, Performance Plus Managed Disks 지원 (미리 보기)](https://azure.microsoft.com/updates?id=564644)
-프리미엄 SSD 및 Performance Plus 디스크 실시간 복제·DR 시나리오 지원으로, 프라이머리/세컨더리 성능 오차 최소화.
+### [Site-to-Site VPN 인증서 기반 연결 지원](https://azure.microsoft.com/updates?id=562705)
+기존 예비 공유키 대신 인증서 기반 신뢰 구축을 통한 암호화, 키 관리가 더 안전해져 하이브리드 네트워크 환경 보안 수준이 한층 강화되었습니다.
 
-### [Mock runs for Azure Storage Actions](https://azure.microsoft.com/updates?id=559494)
-대규모 Blob 일괄 관리 작업 실행 전 정책의 사전체크 가능.
+### [Azure Virtual Network NSG/라우팅 테이블 한도 상향](https://azure.microsoft.com/updates?id=562695)
+NSG·라우팅 테이블 기본 용량이 늘어나 대규모 멀티티어 클라우드 아키텍처 설계 유연성과 확장성이 크게 개선되었습니다.
 
-### [Multiparty Marketplace Offer 및 SaaS 자동 활성화](https://azure.microsoft.com/updates?id=561771)
-마켓플레이스 SaaS 구독 즉시 시작·과금, 오퍼별 파트너 정책 자동화.
+### [VPN Gateway P2S 사용자 그룹/IP Pool 관리](https://azure.microsoft.com/updates?id=564460)
+원격 사용자별 별도 IP 풀 적용 및 Microsoft Entra ID 등 루트 기반 보안 관리로 사용자 세분화 및 접근 제어가 보다 정밀해졌습니다.
 
-### [Network Watcher rule impact analyser](https://azure.microsoft.com/updates?id=562690)
-네트워크/보안 변화에 대한 사전 영향 분석, 장애 예방과 컴플라이언스 보장.
+### [Virtual Network Flow 로그 Sentinel 연동](https://azure.microsoft.com/updates?id=564689)
+네트워크 트래픽 로그가 실시간 보안 이벤트 감지 및 연관 분석 관제에 활용할 수 있어 운영 전반의 보안 가시성이 대폭 증대됩니다.
 
-### [Update: 99.99% uptime for Azure Service Bus Premium SLA](https://azure.microsoft.com/updates?id=561947)
-AZ 지원 리전 내 프리미엄 네임스페이스 SLA 상향, 복잡한 메시징 인프라의 신뢰성 대폭 강화.
-
----
-
-## 7. 💡 신규 서비스 및 사용 중단(지원 종료)
-
-기존 VM 예약 인스턴스·구 API 지원 종료 공지, 구 TLS 연결의 단계적 중단 등 장기적 로드맵에 맞춘 기술 선택·마이그레이션 전략 수립 필요성을 강조했습니다.
-
-### [TLS 1.0/1.1 in App Service, Functions, Logic Apps 지원 종료 (2027)](https://azure.microsoft.com/updates?id=557852)
-2027년 5월 이후 TLS 1.0, 1.1 접속 불가. 보안 모범 사례 준수 위해 클라이언트/앱 사전 점검 권장.
-
-### [Azure Document Intelligence v3.0 API 지원 종료 사전 공지](https://azure.microsoft.com/updates?id=561176)
-2029년 3월 30일 이후 v3.0 버전 API 지원 종료. v4.0 등 최신 버전으로 조기 마이그레이션 필요.
-
-### [Azure Reserved VMs Instances(일부 시리즈) 지원 종료](https://azure.microsoft.com/updates?id=560948)
-2026년 7월 1일부터 Av2, Bv1, D, Dv2 등 신규/갱신 불가. 후속 VM 시리즈로 전환 유도.
-
-### [Update: Egress/Data Transfer with Azure in UK](https://azure.microsoft.com/updates?id=561392)
-영국 데이터 전송 시 적용 조건 변경, 비용 및 크레딧 청구 정책 안내.
-
-### [Microsoft Foundry 내장 RBAC 역할 네이밍 개편 및 관리 강화](https://azure.microsoft.com/updates?id=562533)
-역할 명칭 맞춤, 신규 워크플로 관리·권한 할당 시나리오 대응.
+### [Network Watcher 룰 영향 분석 GA](https://azure.microsoft.com/updates?id=562690)
+보안 그룹·운영 규칙 변경 영향도를 사전에 체계적으로 분석해 배포 전 위험요인 방지가 가능해졌습니다.
 
 ---
 
-## 한국(Korea Central, Korea South) 지역 관련
+## 데이터 플랫폼 및 AI
 
-### [Confidential computing for Azure Service Bus Premium (Korea Central)](https://azure.microsoft.com/updates?id=561942)
-Azure Service Bus Premium에서 하드웨어 기반 신뢰 실행환경(TEE)을 통한 메시지 처리 지원 가능. 암호화된 데이터 가공·이동 중·저장 상태 전체가 보호되므로, 국내 규제가 요구하는 데이터 주권·보안 요구사항을 완벽히 충족함. 애플리케이션 코드 수정 없이 네임스페이스 단위로 설정할 수 있어, 금융·공공 등 보안 민감 업계에 적합.
+클라우드 기반 데이터, AI, 분석 영역 혁신과 새로운 개발자 경험을 다룬 소식입니다.
+
+### [Azure Cosmos DB LangChain/Azure CosmosDB 파이썬 패키지 지원](https://azure.microsoft.com/updates?id=562074)
+AI/에이전트 기반 서비스가 Vector/Hybrid 검색, 대화 이력, 캐시, 체크포인트까지 단일 Cosmos DB 상에서 구현 가능, 확장성과 효율적 상태 관리에 특화된 개발 환경이 강화되었습니다.
+
+### [Azure Event Grid MQTT/구독 ID 확장](https://azure.microsoft.com/updates?id=562240)
+MQTT Retain, Shared Subscription, HTTP Publish 등 IoT, 실시간 메시징 통합이 더욱 강력해졌으며, 미리 보기로 Subscription Identifier 도입 등 개발자의 활용성이 극대화됐습니다.
+
+### [Azure Monitor Application Insights 자동 계측 AKS 앱 지원](https://azure.microsoft.com/updates?id=562049)
+코드 변경 없이도 자바/Node.js 워크로드를 자동 모니터링·분석, 분산 추적, 장애 진단 등 클라우드 네이티브 모니터링 경험이 대폭 개선되었습니다.
+
+### [Azure SQL Managed Instance Business Critical 크기 자동 최적화(미리 보기)](https://azure.microsoft.com/updates?id=560283)
+과다 프로비저닝 없이 인스턴스 성능을 최적화하는 자동화 기능으로 운영 비용 최적화 및 DbaaS 전략 이점이 늘어났습니다.
+
+### [Azure Cosmos DB 쉘(미리 보기)](https://azure.microsoft.com/updates?id=561162)
+AI 기반 MCP 활용의 스마트 CLI 도입으로 쿼리, 관리, 탐색 효율이 대폭 증진되었고, 시각적·코딩 동시 지원까지 혁신적인 개발자 경험을 제공합니다.
 
 ---
 
-## 총평 및 다음 달 전망
+## 관리, 거버넌스 및 마이그레이션
 
-2026년 5월의 Azure 업데이트는 엔터프라이즈 및 퍼블릭 클라우드 고객 모두의 요구, 특히 대규모 확장성·보안·자동화·운영 편의성에 대한 트렌드를 반영한 실용 중심의 방향이 인상적이었습니다. 미리 보기 기능들을 통해 대용량 데이터관리, 네트워크 관리 자동화, 서비스 통합이 더욱 간편해졌으며, 컴파일러와 코드 변경 없는 모니터링·DR 등 개발과 운영 프로세스 효율도 크게 진전되었습니다.
+관리 효율화, 가시성, 마이그레이션 체계 강화 내 업데이트입니다.
 
-지원 종료 관련 사전 공지(예약 VM, TLS, 문서 AI 등)가 늘어 감에 따라, 내년을 대비한 시스템 전환과 보안 정책 검토·연동 서비스 아키텍처 조정 작업의 우선 순위가 더욱 높아질 것으로 전망됩니다.
+### [Azure Storage Mover 내장 일정 관리 기능](https://azure.microsoft.com/updates?id=562622)
+마이그레이션 작업의 자동 스케줄링(예약, 반복)이 지원되어 반복적 동기화, 단계적 이관, 야간 스케줄 등 기업 운영 효율성이 강화되었습니다.
 
-6월에는 Ignite 등 주요 연례 행사들과 맞물려, Azure AI, 보안 자동화, 하이브리드 멀티클라우드 연동, 클라우드 네이티브 개발툴 중심으로 더욱 혁신적인 서비스와 선제적 보안·운영 지원책이 발표될 것으로 기대됩니다. 앞으로도 Azure의 방향성은 클라우드 도입의 장벽을 낮추고, 데이터 기반 비즈니스의 지능화·효율화를 다양한 운영 환경에서 실현하는 데 중점을 둘 것이 분명해 보입니다.
+### [Azure NetApp Files Object REST API 정식 지원](https://azure.microsoft.com/updates?id=562254)
+S3 호환 REST API 도입으로 데이터 복제/이동 없이 쉽게 Microsoft Fabric, Azure AI 등 다양한 최신 플랫폼과 연동 및 분석이 가능해집니다.
+
+### [Azure Site Recovery, Performance Plus 지원(미리 보기)](https://azure.microsoft.com/updates?id=564644)
+ASR이 프리미엄 디스크의 고성능 옵션까지 지원하여 운영 및 재해 복구 전체의 신뢰성과 일관성이 한층 높아졌습니다.
+
+### [Azure Backup VM 일괄 복구(미리 보기)](https://azure.microsoft.com/updates?id=561373)
+최대 100개 VM 동시 복구로 장애, 랜섬웨어 등 대규모 리커버리 상황 대응 속도와 관리 편의성이 대폭 향상되었습니다.
+
+### [Azure Storage Actions 모의 실행(Mock Run) 기능](https://azure.microsoft.com/updates?id=559494)
+대용량 데이터 작업을 실제 실행 없이 시뮬레이션·보고서 생성이 가능해, 사전 검증을 통한 운영 안정성 및 규정준수 체계를 강화하였습니다.
+
+---
+
+## 지역 (한국 등) 주요 업데이트
+
+한국 및 특정 지역 중심의 변화·지원 강화를 정리했습니다.
+
+### [Azure Service Bus Premium 기밀 컴퓨팅 – Korea Central 지원](https://azure.microsoft.com/updates?id=561942)
+Azure Service Bus Premium에서 하드웨어 기반 신뢰 실행 환경(TEE) 내 메시지 처리가 한국중부 리전에 제공되어, 암호·키 관리, 데이터 사용 시 보안까지 포괄적 보안 환경을 제공합니다.
+
+---
+
+## Microsoft Foundry / Microsoft Fabric
+
+### Microsoft Foundry
+
+#### [Microsoft Foundry 내장 RBAC 역할 명칭 및 관리 강화](https://azure.microsoft.com/updates?id=562533)
+Foundry 역할 네이밍 통일 및 워크로드별 역할 할당 기능이 개선되어, AI 관련 프로젝트 관리 및 배포, 권한 관리가 명확하고 유연해졌습니다.
+
+---
+
+## 주요 지원 종료 및 중단 (Retirement/Deprecation)
+
+현 시점 Azure 환경에서 반드시 확인해야 할 지원 종료 내용 및 향후 조치 항목입니다.
+
+### [Azure Document Intelligence v3.0 API, 2029년 3월 30일 종료](https://azure.microsoft.com/updates?id=561176)
+해당 일자 이후 v4.0 이상으로 이전이 필요하며, 지원 종료 후 더 이상 서비스 불가함에 유의해야 합니다.
+
+### [Azure App Service/Functions/Logic Apps – TLS 1.0, 1.1 2027년 5월 31일 지원 종료](https://azure.microsoft.com/updates?id=557852)
+2027년 5월 이후 TLS 1.2 이상만 연결 가능하며, 기존 레거시 암호화 환경은 반드시 업그레이드 필요합니다.
+
+### [Azure 예약형 VM 대상 시리즈 일부 RI 판매/갱신 종료, 2026년 7월 1일](https://azure.microsoft.com/updates?id=560948)
+해당 날짜 이후 RI 만료 시, 자동 갱신 불가 및 PAYG로 자동 전환되므로 미리 신규 VM 시리즈(업그레이드) 또는 비용 전략 수립이 필수입니다.
+
+---
+
+## 이번 달 총평 및 다음 달 전망
+
+2026년 5월 Azure 업데이트는 클라우드 인프라의 ‘운영 단순성, 자동화, 신뢰성’ 강화에 집중되며, 데이터·네트워크·보안·개발 현장 전반에서 생태계 확장과 기술 최적화의 실질적인 진전을 보여주었습니다. 미리 보기 기능의 빠른 현장 적용, 하이브리드/분산 환경에 최적화된 관리 효율, AI 및 서비스 혁신 가속화가 상호 맞물려 Azure 플랫폼 전체에 파급효과를 낳고 있습니다. 지원 종료(리타이어먼트)와 새로운 정책의 선제적 공지는 장기적인 서비스 체계 안정화를 위한 준비로 해석할 수 있습니다.
+
+다음 달에도 Azure는 신규 인텔 기반 VM, 보안·지능형 네트워크, 데이터 연계 혁신 기능이 추가될 전망이며, 특히 데이터 통합/AI 플랫폼, 한국 등 주요 리전의 현지화 고객 지원, 멀티클라우드 확장 관련 소식이 이어질 것으로 기대됩니다. 규모 확장과 심플함, 보안/운영의 동시 혁신이 주된 키워드로 자리 잡을 것으로 예상됩니다.
