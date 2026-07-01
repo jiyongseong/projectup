@@ -1,168 +1,170 @@
 # Azure 월간 업데이트 요약 - 2026년 06월
 
-## 전반적인 트렌드와 핵심 인사이트
+## 전반적 트렌드 및 핵심 인사이트
 
-2026년 6월 Azure의 업데이트에서 가장 뚜렷하게 관찰된 트렌드는 "AI 중심의 플랫폼 혁신"과 "엔터프라이즈 자동화 및 개발 효율성 강화"입니다. Microsoft Foundry와 Microsoft Fabric 등 AI 및 데이터 기반 서비스가 핵심 사업부들의 전략적 방향을 주도하고 있습니다. 이번 달에는 AI/머신러닝 관련 기능의 정식 지원과 미리 보기, 그리고 보안과 거버넌스를 위한 기술적 강화가 많은 비중을 차지했습니다.
+2026년 6월 Azure 업데이트는 AI와 에이전트 중심의 클라우드 혁신, 데이터 플랫폼의 확장, 그리고 관리/운영의 자동화와 보안 강화가 두드러진 달이었습니다. 가장 눈에 띄는 변화는 Microsoft Foundry와 Microsoft Fabric 등 새로운 서비스 카테고리의 정식 지원과 미리 보기 기능이 폭넓게 공개되어, 기업이 대규모 AI 및 에이전트 기반 솔루션을 빠르게 도입할 수 있는 환경이 마련된 것입니다.
 
-Azure AI 및 Foundry는 매우 다양한 AI 및 데이터 분석 시나리오를 지원하면서, 개발자와 엔터프라이즈 사용자의 피드백을 반영한 새로운 API, 모델, 도구를 지속적으로 출시하고 있습니다. 특히, 영지식 처리와 도메인별 모델 필터링, 자연어 기반 데이터 쿼리, API 레이어의 표준화, 대화형 PII 탐지 등 데이터 및 작업 기반 AI에서 중요한 역할을 합니다.
+AI 분야에서는 모델 배포와 운영의 표준화, 엔터프라이즈급 프라이버시 처리 및 평가 기능, 그리고 다양한 분석·검색·음성·비디오 API 통합이 가속화되었습니다. Microsoft Foundry는 모델 카탈로그, 에이전트 서비스, 평가, 자동화 워크플로우 등 혁신적 기능을 선보였고, AI Search와 Azure OpenAI 연동을 위한 관리·보안 강화도 이루어졌습니다. 특히 Purview 기반 민감도 라벨링과 감사, 서버리스 인덱서 등 데이터의 안전과 효율을 높이는 기능이 강조되었고, 에이전트 간 통신(A2A), 사용자 피드백 로깅 등 실무적 자동화도 발전하고 있습니다.
 
-인프라 관점에서는 VM과 스토리지의 세분화, 네트워킹의 성능 및 보안 향상, OS 플랫폼(예: Azure Linux, Azure Container Linux) 미리 보기 및 정식 지원이 확대되었습니다. 컨테이너, 서버리스 컴퓨팅, 데이터베이스 등에서 확장성과 자동화, 표준화된 관리 경험을 위한 신기능이 연이어 등장하며 개발자 효율성과 운영 신뢰성을 높였습니다.
+데이터 플랫폼에서 Cosmos DB, HorizonDB, PostgreSQL, DocumentDB 등 주요 서비스가 글로벌 인덱스, 분산 트랜잭션, 벡터 검색과 BM25 등 AI와 검색 특화 기능을 본격 지원하며, 관리 도구와 SDK도 Visual Studio Code와 GitHub Copilot과 연동되어 개발 생산성을 크게 높였습니다. MySQL, PostgreSQL, DocumentDB 등에서 지역 확장과 셀프서비스 할당량·유지 관리, 이관 지원 등 현장에서 요구하는 편의성도 강화되었습니다.
 
-또한, 보안 및 거버넌스 강화가 꾸준히 이루어지고 있으며, 서비스별 도메인 통합, 역할 기반 액세스, 감시 및 감사 기능이 도입되어 클라우드 환경 전반에서 법적/사업적 요구를 충족시키고 있습니다. 데이터베이스와 AI, 미리 보기 기능, 기존 서비스의 지원 종료(deprecation, retirement) 등으로 Azure의 서비스 포트폴리오는 더욱 진화하고 있습니다.
+인프라와 운영 영역은 Kubernetes, VMSS, Container Apps, Azure Functions 등 클라우드 네이티브 환경의 자동화, 손쉬운 관리, 그리고 강력한 보안(Defender, RBAC)과 연계된 서비스 간 신뢰성이 크게 향상되었습니다. Azure Monitor는 OpenTelemetry 통합과 SLI/SLO 관점의 모니터링으로 운영 실무에서의 효율성과 가시성을 높였고, DevOps·마이그레이션 도구와의 연계, 네트워크 관리 기능 등도 확대되었습니다.
 
-전체적으로 이번 달 Azure 업데이트는 차세대 AI 기반 개발 환경의 대중화와 엔터프라이즈 현업 업무 자동화, 그리고 인프라 운영의 표준화와 거버넌스 강화를 중심으로 진행되었으며, 개발자와 엔터프라이즈 고객의 협업과 생산성이 크게 높아질 수 있는 기반을 마련했습니다.
+최신 서비스로의 전환·지원 종료(Deprecated) 정책 또한 지속적으로 고도화되어, 기존 VM, NAT, Synapse Link, Blueprints 등 레거시 서비스는 차세대 솔루션으로의 자연스러운 이동을 유도합니다. 이러한 변화는 Azure가 “AI+데이터+자동화+보안”의 엔터프라이즈 표준 클라우드 플랫폼으로 진화하고 있음을 보여줍니다.
+
+## 주요 카테고리별 요약
 
 ---
 
-## 🚀 AI 및 머신러닝
+## 🤖 AI 및 머신러닝
 
-Azure의 AI 및 머신러닝 부문에서는 생산성과 거버넌스, 인프라 연동의 강화가 두드러집니다. Foundry와 Azure AI Translator를 중심으로 다양한 실시간 및 비동기 지원이 확대되었으며, 데이터 및 모델 기반의 자동화와 효율적 협업이 가능해졌습니다.
-
-### [Speech SDK 1.50 for Azure AI Speech](https://azure.microsoft.com/updates?id=563192)
-최신 Speech SDK 1.50이 여러 언어와 플랫폼에서 정식 지원되며 음성 인식 및 합성 기능을 강화함.
-
-### [LLM Speech API in Azure AI Speech](https://azure.microsoft.com/updates?id=564387)
-최신 LLM 기반 음성 API의 정식 지원으로 25개 언어, 90+ 로케일의 정확한 트랜스크립션 및 번역 제공.
+이번 달 Azure AI는 에이전트 개발·배포를 위한 Microsoft Foundry, Foundry IQ, 다양한 언어 및 음성 API, 그리고 Azure AI Translator, Azure AI Search 등에서 텍스트·이미지·음성 통합 및 민감도/보안 강화를 대폭 선보였습니다. 서버리스 인덱서, OpenTelemetry 지원 등 AI 운영 자동화도 진전되며, 엔터프라이즈 규모 모델 관리 및 평가가 실무에 적용되고 있습니다. Microsoft Purview와 연계한 데이터 보안과 감사도 핵심 트렌드입니다.
 
 ### [Document translation for image files (synchronous, single document)](https://azure.microsoft.com/updates?id=563341)
-이미지 파일 즉시 번역 기능이 정식 지원되어 OCR과 번역이 단일 API에서 실시간으로 처리 가능.
+이미지 파일 실시간 번역 API가 정식 지원되어 모바일·현장 앱, 폼, 메뉴 등에서 즉시 번역이 가능해졌습니다.
 
-### [OneLake catalog integration for Azure AI Search knowledge sources](https://azure.microsoft.com/updates?id=564407)
-OneLake 카탈로그와 Azure AI Search의 통합으로 데이터 거버넌스와 보안, 중복 제거가 실현됨.
+### [Unified Text Translation API in Azure AI Translator](https://azure.microsoft.com/updates?id=563631)
+텍스트 번역 API 통합으로 LLM, NMT, 도메인별 모델을 하나의 엔드포인트에서 사용할 수 있어, 엔터프라이즈-다국어 번역의 효율성이 극대화되었습니다.
 
-### [Azure Databricks native read access to Microsoft OneLake](https://azure.microsoft.com/updates?id=565733)
-Databricks에서 OneLake 데이터를 직접 분석할 수 있게 되어 데이터 플랫폼 전반의 활용성과 효율성이 크게 향상됨.
+### [GenAI prompt skill and chat completion in Azure AI Search knowledge sources](https://azure.microsoft.com/updates?id=563247)
+Azure AI Search에서 GenAI 프롬프트 스킬 및 챗 완료 기능이 정식 지원되어, AI 기반 콘텐츠 분류 및 요약을 구축하기 쉬워졌습니다.
+
+### [LLM Speech API in Azure AI Speech](https://azure.microsoft.com/updates?id=564387)
+다국어 오디오 파일에 대해 LLM 기반의 고품질 음성 인식·번역 API가 정식 지원되어, 음성 AI의 활용도가 크게 향상되었습니다.
+
+### [Voice Live integration with Microsoft Foundry Agent Service](https://azure.microsoft.com/updates?id=563601)
+실시간 음성-텍스트 상호작용을 기반으로 Foundry 에이전트와 직접 연동, 고객 상담, 자동차 음성 서비스 등에서 완전한 AI 에이전트 통합이 가능해졌습니다.
+
+---
+
+## 🗄️ 데이터베이스
+
+Cosmos DB, HorizonDB, DocumentDB 등 주요 데이터베이스에서 글로벌 인덱스, 분산 트랜잭션, AI/벡터 검색, 고가용성, 셀프서비스 관리 도구 및 통합 SDK가 출시되었습니다. 데이터베이스와 AI, 에이전트 연계의 표준화 및 개발 생산성 향상이 월간 트렌드입니다.
+
+### [Azure Cosmos DB global secondary indexes](https://azure.microsoft.com/updates?id=562799)
+글로벌 세컨더리 인덱스 정식 지원으로 읽기 성능이 대폭 개선, 복잡한 파티셔닝과 쿼리 부담을 줄였습니다.
+
+### [Azure Database for PostgreSQL - Flexible Server: DuckDB extension](https://azure.microsoft.com/updates?id=563766)
+DuckDB 확장 정식 지원으로 PostgreSQL에서 로컬 분석 및 클라우드 기반 분석 워크플로우를 유연하게 운영할 수 있습니다.
+
+### [Azure DocumentDB Migration Extension in Visual Studio Code](https://azure.microsoft.com/updates?id=563072)
+VS Code에서 드래그 앤드 드롭 방식의 DocumentDB 이관이 가능하여 DX(개발 경험)가 크게 개선되었습니다.
+
+### [Azure Database for PostgreSQL flexible server pg_ivm extension](https://azure.microsoft.com/updates?id=563771)
+pg_ivm 확장 정식 지원으로 PostgreSQL의 즉시 뷰(Materialized View) 기능 사용이 가능해졌습니다.
+
+### [Azure Cosmos DB all versions and deletes change feed mode](https://azure.microsoft.com/updates?id=562971)
+모든 버전 및 삭제 변경 피드 모드가 정식 지원되어, 데이터 복제·감사·트리거 개발이 가능합니다.
+
+---
+
+## ☁️ 인프라 및 컴퓨팅
+
+Kubernetes, VMSS, Container Apps, Azure Functions, Azure Linux 등 클라우드 기반 인프라의 자동화·운영 개선이 두드러졌습니다. Azure Linux 4.0, Azure Container Linux, AKS 자동 관리, 멀티 클라우드 지원 등 효율성과 보안이 강화된 신규 기능이 출시되었습니다. VM, NAT, Batch 등 일부 인프라 서비스는 지원 종료 공지가 잇따랐습니다.
+
+### [Azure Container Linux (ACL) now generally available on Azure Kubernetes Service (AKS)](https://azure.microsoft.com/updates?id=564537)
+Immutable OS로 클러스터 운영 안전성·속도가 향상, 보안 기반 Kubernetes 환경 구축이 더 쉬워졌습니다.
+
+### [Azure Kubernetes Fleet Manager for Arc-enabled clusters](https://azure.microsoft.com/updates?id=562904)
+Azure Arc 지원으로 하이브리드·멀티클라우드 Kubernetes 클러스터 통합 관리가 실현되었습니다.
+
+### [Azure NC RTX PRO 6000 Blackwell Server Edition v6 Series Virtual Machines](https://azure.microsoft.com/updates?id=565271)
+최신 GPU·AI용 VM이 정식 지원되어, 고성능 AI·그래픽 워크로드 운영이 확대되었습니다.
+
+### [Azure Functions Support for Node.js 24](https://azure.microsoft.com/updates?id=562647)
+최신 Node.js 24 지원으로 Functions의 DX와 호환성이 개선되었습니다.
+
+### [Azure VM 및 Batch용 Av2/F/G/Ls, D/Ds/Dv2/Dsv2/LS 지원 종료 안내](https://azure.microsoft.com/updates?id=564774)
+레거시 VM 시리즈 지원 종료 및 대체 안내로 최신 VM으로의 전환을 촉진하고 있습니다.
+
+---
+
+## 🔗 통합 및 개발자 경험
+
+Azure API Center, API Management, Logic Apps 등에서 MCP, Agent-to-Agent, 다중 커스텀 도메인, 컨텐츠 안전 정책, 통합 커넥터 등 엔터프라이즈 규모 API/에이전트 카탈로그 및 통합 관리 기능이 출시되었습니다. 신규 기능은 Git 기반 동기화, LLM 품질 평가, Agent API 관리 표준화, Connector Namespace 등의 형태로 DX와 신뢰성을 동시에 개선하였습니다.
+
+### [Azure API Center now supports agent registration, agent assessment, and Git-based synchronization](https://azure.microsoft.com/updates?id=562909)
+에이전트 등록·품질 평가·Git 동기화 정식 지원으로 AI 및 자동화 조직의 전체자산 관리가 간소화되었습니다.
+
+### [Azure API Management adds support for Agent-to-Agent (A2A) APIs](https://azure.microsoft.com/updates?id=562843)
+A2A 통신 API 관리 표준화로 에이전트 기반 워크플로우의 보안·운영 일관성이 향상되었습니다.
+
+### [Azure API Management Premium v2 and Standard v2 now support wildcard custom hostnames](https://azure.microsoft.com/updates?id=562894)
+와일드카드 도메인 지원으로 대규모 API 환경의 인증서·도메인 관리가 자동화되었습니다.
+
+### [Azure Logic Apps MCP Server](https://azure.microsoft.com/updates?id=562868)
+Logic Apps 워크플로우를 AI 에이전트 호출 대상(MCP Tool)로 노출 가능, 엔터프라이즈 자동화가 강화되었습니다.
+
+### [Connector Namespace Public Preview](https://azure.microsoft.com/updates?id=562874)
+SharePoint, Salesforce 등 타사와 표준 커넥터로 신속한 통합/인증 운영이 실현되었습니다.
 
 ---
 
 ## 👩‍💻 Microsoft Foundry
 
-Microsoft Foundry는 Azure 상에서 AI, 음성, 텍스트 이해, 평가, 모델 통합 등 다양한 기능을 선보이며 개발자 중심의 혁신적 플랫폼으로 자리잡고 있습니다. 이번 달에는 모델 카탈로그, 도메인 필터, 전문 API, 평가 및 관찰 기능, 보안 연동 등 새로운 기능들이 정식 지원 및 미리 보기로 대거 추가되었습니다.
-
-### [Adaptive custom translation in the Azure AI Foundry NextGen playground](https://azure.microsoft.com/updates?id=563307)
-AdaptCT 기능이 정식 지원으로 출시되어 도메인 기반 번역 개선 및 자동화된 워크플로우 구현이 가능해짐.
-
-### [Content Understanding extractionMode for documents](https://azure.microsoft.com/updates?id=563257)
-문서 분석에서 extractionMode 옵션이 도입되어 구조화/비구조화 문서 모두 정확한 분석 지원.
+Microsoft Foundry는 AI 모델 카탈로그·플레이그라운드·에이전트 개발·평가·자동화 등 에이전트 중심 AI 제품의 표준 플랫폼으로 자리잡고 있습니다. 이번 달에는 Foundry IQ, Agent Service, 평가·관찰·피드백, 도메인 필터, Voice Live 통합, 정식 SDK 및 VS Code 확장, Purview 연동 등 데이터와 모델, 보안, 운영 계층 모두에서 혁신이 이뤄졌습니다. 또한 OneLake/Fabric와의 연동, 도메인별 모델, 원격 MCP 서버 지원 등이 가속화되고 있습니다.
 
 ### [Custom Avatar and Custom Video portal in Microsoft Foundry](https://azure.microsoft.com/updates?id=563436)
-맞춤 아바타 및 영상 제작 기능이 Foundry에 통합되어 AI 기반 대화형 컨텐츠 제작 자동화 구현.
-
-### [Custom Voice portal experience in Microsoft Foundry](https://azure.microsoft.com/updates?id=563691)
-맞춤 음성 생성 및 배포 기능이 Foundry portal로 통합되어 음성 모델 생산성과 협업 흐름이 강화됨.
+커스텀 아바타·비디오 저작·생성 기능 정식 지원, 음성·이미지 합성 기반 AI 에이전트 구현이 쉬워졌습니다.
 
 ### [Microsoft Foundry for Visual Studio Code (June Build 2026 refresh)](https://azure.microsoft.com/updates?id=563721)
-VS Code에서 Foundry 전체 모델 카탈로그, 플레이그라운드, 에이전트 배포 기능을 쉽게 사용할 수 있어 개발 환경의 혁신적 변화 제공.
+VS Code 확장 정식 지원, 모델 검색/배포/코드생성까지 개발 환경에서 원스톱으로 진행 가능합니다.
+
+### [Managed virtual network for evaluations in Microsoft Foundry](https://azure.microsoft.com/updates?id=564402)
+에이전트/모델 평가용 Virtual Network 지원으로 보안·컴플라이언스 환경에서 자동화 평가가 가능해졌습니다.
+
+### [Region-agnostic reservations for Global PTU in Microsoft Foundry](https://azure.microsoft.com/updates?id=563212)
+폰드리 모델의 지역 비상관성 예약(할인) 지원, 대형 AI 사용 비용 관리·조달이 대폭 간소화되었습니다.
+
+### [Benchmark evaluations for fine-tuned models in Microsoft Foundry](https://azure.microsoft.com/updates?id=563167)
+모델 및 에이전트의 벤치마크 평가 자동화 기능 미리 보기, 엔터프라이즈 기준으로 AI 품질 측정 가능.
 
 ---
 
-## 🛠️ 데이터베이스 및 스토리지
+## 🏢 Microsoft Fabric
 
-데이터베이스 및 스토리지 부문에서는 대규모 데이터 처리, 연속성, 자동화, 인텔리전스 기능이 강화되었습니다. PostgreSQL, Cosmos DB, DocumentDB 등에서 새로운 기능과 관리 경험이 정식 지원 및 미리 보기로 제공되고 있습니다.
+Microsoft Fabric은 데이터 레이크·AI·분석의 통합 플랫폼으로, OneLake 연동성·카탈로그·Mirroring 서비스가 다수 출시되었습니다. Azure Databricks와의 직접 연동, Genie MCP, Fabric Ontology, OneLake 기반 배치/분석 및 권한 관리 등이 엔터프라이즈의 데이터 거버넌스와 AI 활용을 혁신하고 있습니다.
 
-### [Azure Cosmos DB all versions and deletes change feed mode](https://azure.microsoft.com/updates?id=562971)
-Cosmos DB의 변경 피드에서 모든 버전 및 삭제 상태 추적이 정식 지원되어 데이터 변경과 보안/감사 워크플로우 강화.
+### [Azure Databricks native read access to Microsoft OneLake](https://azure.microsoft.com/updates?id=565733)
+OneLake 내 데이터 조회 기능 정식 지원, 데이터 이동 없이 Azure Databricks와 통합 분석 가능.
 
-### [Azure Database for MySQL Flexible Server self-service quota management experience](https://azure.microsoft.com/updates?id=563147)
-MySQL 서버에서 실시간 쿼터 관리 기능 제공으로 개발자 및 운영팀의 효율적 리소스 관리 실현.
+### [Azure Databricks natively storing data in Microsoft OneLake](https://azure.microsoft.com/updates?id=565706)
+Azure Databricks 데이터 직접 OneLake 저장 지원, Fabric·Databricks 간 데이터 중복 및 관리 부담 해소.
 
-### [Azure Database for PostgreSQL - Flexible Server: DuckDB extension](https://azure.microsoft.com/updates?id=563766)
-PostgreSQL에서 DuckDB 확장 설치로 빠른 로컬 분석과 OLAP 워크플로우 구현 가능.
+### [Fabric IQ Ontology Knowledge Source in Microsoft Foundry IQ](https://azure.microsoft.com/updates?id=563416)
+Fabric Ontology를 Foundry IQ 지식 소스로 연동, 엔터프라이즈 비즈니스 정의 및 AI 활용이 심화됨.
 
-### [Azure Database for PostgreSQL flexible server pg_ivm extension](https://azure.microsoft.com/updates?id=563771)
-pg_ivm 확장 지원으로 실시간 인메모리 뷰 관리 가능, 대용량 데이터 분석에 최적화.
+### [OneLake catalog integration for Azure AI Search knowledge sources](https://azure.microsoft.com/updates?id=564407)
+OneLake 카탈로그 직접 연동, Fabric 통합 데이터 거버넌스 및 권한 정책의 AI/RAG 파이프라인 적용 가능.
 
-### [Azure DocumentDB Migration Extension in Visual Studio Code](https://azure.microsoft.com/updates?id=563072)
-VS Code에서 MongoDB에서 DocumentDB로 마이그레이션을 손쉽게 수행할 수 있는 확장, 비용 및 시간 절약.
-
----
-
-## 🏗️ 인프라, 컴퓨트, 네트워크
-
-컴퓨트 및 네트워크 서비스에서는 VM, OS, 컨테이너, 네트워크 게이트웨이 등 인프라 성능과 관리성 강화가 주요 흐름입니다. 특히 VM 시리즈와 OS의 지원 확대, NAT Gateway 개선, 인프라의 자동화와 손쉬운 운영이 강조되었습니다.
-
-### [Azure NC RTX PRO 6000 Blackwell Server Edition v6 Series Virtual Machines](https://azure.microsoft.com/updates?id=565271)
-최신 NVIDIA GPU 기반 VM 시리즈의 정식 지원으로 고성능 AI 및 그래픽 워크로드를 더욱 빠르고 효율적으로 처리할 수 있음.
-
-### [Premium SSD v2 disks now support non-zonal Azure Virtual Machines](https://azure.microsoft.com/updates?id=565359)
-비존 VM에서도 프리미엄 SSD v2 사용 지원으로 비용 및 성능 최적화 가능.
-
-### [ICMP Support for Azure Standard V2 NAT Gateway](https://azure.microsoft.com/updates?id=565487)
-NAT Gateway에서 ICMP(Echo, Reply) 지원으로 네트워크 연결성 검증 및 장애 분석이 간편해짐.
-
-### [Azure Container Linux (ACL) now generally available on Azure Kubernetes Service (AKS)](https://azure.microsoft.com/updates?id=564537)
-컨테이너 최적화 리눅스 OS(ACL)의 AKS 정식 지원으로 보안성, 불변성, 관리 효율 향상.
-
-### [Azure Kubernetes Fleet Manager for Arc-enabled clusters](https://azure.microsoft.com/updates?id=562904)
-Fleet Manager를 통한 하이브리드/멀티클라우드 쿠버네티스 중앙 관리 지원으로 운용 효율 및 가시성 극대화.
+### [Azure Synapse Link for Azure Cosmos DB NoSQL 지원 종료 및 Mirroring 권장](https://azure.microsoft.com/updates?id=558560)
+2029년 Synapse Link 지원 종료, 대체 분석 플랫폼으로 Fabric Mirroring 권장 안내.
 
 ---
 
-## 🔗 통합, API, IoT, DevOps
+## 🔒 관리 및 거버넌스
 
-API Management, Logic Apps, IoT, DevOps 관련 영역에서는 최신 통합, 자동화, 감시, 거버넌스 강화 기능이 대폭 추가되었습니다. API 에이전트 관리, MCP 서버, A2A 통신 등 엔터프라이즈 통합 및 운영 효율이 크게 향상되었습니다.
-
-### [Azure API Center now provides a data plane MCP server for enterprise-wide discovery of APIs and AI assets.](https://azure.microsoft.com/updates?id=562914)
-API Center에서 MCP 서버 데이터 평면이 정식 지원되어 기업 전체의 API 및 AI 자산 탐색 및 관리 중앙화.
-
-### [Azure API Management adds support for Agent-to-Agent (A2A) APIs](https://azure.microsoft.com/updates?id=562843)
-A2A API 지원으로 엔터프라이즈 AI 시스템의 에이전트간 통신과 거버넌스가 강화됨.
-
-### [Azure API Management now supports content safety controls for MCP and A2A APIs.](https://azure.microsoft.com/updates?id=562880)
-MCP/A2A API 대상 콘텐츠 안전 정책 중앙관리, 비정상/위험 데이터 차단 및 규제 준수 구현.
-
-### [Azure Logic Apps MCP Server.](https://azure.microsoft.com/updates?id=562868)
-Logic Apps 워크플로우를 MCP 서버로 노출 가능하게 하여 AI 에이전트 기반 자동화 및 통합 실현.
-
-### [Azure Event Grid - MQTT v5 Subscription Identifier](https://azure.microsoft.com/updates?id=564532)
-MQTT v5 구독 식별자 정식 지원으로 메시지 라우팅 및 IoT 이벤트 처리 품질 및 효율성 개선.
-
----
-
-## 🦾 관리 및 거버넌스, 보안
-
-Azure는 관리 및 거버넌스, 보안 부문에서 DevOps 및 서비스 관리 체계를 강화하고 있습니다. 모니터링, 감사, 업데이트, 자율 관리, 사고 복구 등에서 더욱 스마트한 운영 경험과 신뢰성 향상이 이루어졌습니다.
+Azure Monitor, Migrate, Policy, Blueprints 등 관리·운영 플랫폼에서 SLI/SLO 기반 모니터링, OpenTelemetry 통합, 자동 정책·감사, 마이그레이션 도구의 AI 연동이 본격 추진되고 있습니다. Blueprints, VM, NAT 등 일부 서비스는 지원 종료와 함께 신규 솔루션으로 이전 유도되고 있습니다.
 
 ### [Azure Monitor Service Level Indicators (SLI)](https://azure.microsoft.com/updates?id=565159)
-애플리케이션 고객 경험 중심의 서비스 품질 지표(SLI/SLO) 도입, 운영 노이즈 제거 및 서비스 수준 실현 가능.
-
-### [Dynamic threshold for Log search alerts](https://azure.microsoft.com/updates?id=561984)
-동적 임계치 기반 로그 알림 정식 지원으로 모니터링 자동화 및 대규모 환경 운영 효율성 향상.
-
-### [Log Analytics Summary Rules experience](https://azure.microsoft.com/updates?id=562027)
-Summary Rules 기능으로 대량 로그 데이터를 요약 관리 및 쿼리 성능 개선 가능.
+서비스 수준 지표·목표(SLI/SLO) 기반 사용자 중심 모니터링 정식 지원, 실제 고객 경험 측정이 가능해졌습니다.
 
 ### [Azure Migrate – GitHub Copilot Modernization integration for at scale code assessments](https://azure.microsoft.com/updates?id=566145)
-Azure Migrate와 GitHub Copilot 현대화 통합으로 대규모 코드 평가 및 현대화, 자동화 추천 가용.
+마이그레이션 자동화 도구와 Copilot 연동으로 코드 분석·현대화 추천이 자동화되었습니다.
 
-### [Azure Site Recovery support for Linux Azure VMs with NVMe disk controllers.](https://azure.microsoft.com/updates?id=565103)
-NVMe 디스크 기반 Linux VM 복구 지원으로 고성능 워크로드의 DR 및 운영 신뢰성 강화.
+### [Azure Infrastructure Resiliency Manager](https://azure.microsoft.com/updates?id=564759)
+애플리케이션 레질리언스 설계, 평가, 개선을 위한 통합 관리 포털 미리 보기 기능 출시.
 
----
+### [Azure Blueprints 지원 종료 및 Azure Deployment Stack으로 이전 권장](https://azure.microsoft.com/updates?id=564806)
+Blueprints 2027년 지원 종료, 스택·템플릿 기반 운영으로 전환 필요.
 
-## 📉 서비스 지원 종료 및 사용 중단(Retirement/Deprecation)
-
-Azure는 지속적으로 서비스 포트폴리오를 재정비하고 있습니다. 노후 VM 시리즈, Storage Accounts, Blueprints, VPN Client 등 일부 서비스의 지원 종료가 발표되어 사용자들의 선제적 대응이 요구됩니다.
-
-### [Av2-series, F-series, Fs-series, Fsv2-series, G-series, Gs-series, and Lsv2-series Virtual Machines for Azure Batch pools](https://azure.microsoft.com/updates?id=564774)
-Batch Pool 대상 VM 시리즈의 2028년 11월 15일 지원 종료, 신규 Pool 생성을 막고 기존 Pool 마이그레이션 권장.
-
-### [Azure Load Balancer Inbound NAT rule version 1 for Azure VMSS (Inbound NAT Pools)](https://azure.microsoft.com/updates?id=565482)
-Inbound NAT Pools는 2027년 9월 30일에 지원 종료, 버전 2로의 마이그레이션 요구.
-
-### [GPv1 and Legacy Blob storage account creation](https://azure.microsoft.com/updates?id=564441)
-GPv1 및 레거시 Blob Storage Account 신규 생성은 2026년 6월 1일부터 불가, 10월 13일 최종 Retirement.
-
-### [Azure Synapse Link for Azure Cosmos DB NoSQL](https://azure.microsoft.com/updates?id=558560)
-Synapse Link의 신규 계정 생성 중단(2026년 3월 31일), Fabric Mirroring로의 마이그레이션 권장.
-
-### [Azure VPN Client for Linux (Preview)](https://azure.microsoft.com/updates?id=565393)
-Linux VPN 클라이언트 미리 보기 2026년 8월 31일 사용 중단, 대체 클라이언트로 전환 필수.
+### [Log Analytics Summary Rules experience](https://azure.microsoft.com/updates?id=562027)
+로그 집계 및 추가 분석 경험 강화, 초고속 데이터 요약·비용 최적화 가능.
 
 ---
 
-## 총평 및 다음 달 전망
+## 전체 업데이트 총평 및 다음 달 전망
 
-2026년 6월 Azure 업데이트는 AI 기반 업무 자동화와 플랫폼 연동, 인프라 표준화, 엔터프라이즈 거버넌스와 보안, 그리고 개발 생산성의 획기적 향상을 중심으로 이루어졌습니다. Microsoft Foundry와 Fabric의 지속적인 발전으로 모든 개발자와 엔터프라이즈가 AI-기반 서비스와 자동화에 한층 쉽게 접근할 수 있게 되었으며, 기존 인프라 서비스의 효율성과 표준화가 강화되고 있습니다.
+이번 달 Azure는 데이터와 에이전트 중심 클라우드 시스템의 대규모 자동화와 표준화, 그리고 엔터프라이즈 실무 수요에 맞춘 AI·보안·운영 플랫폼의 진화를 다시 한번 입증했습니다. Microsoft Foundry, Fabric, API Center 등 신규 카테고리의 정식 지원은 데이터와 모델, 에이전트, 보안이 유기적으로 연동되는 클라우드 내재형 AI 표준의 본격화를 의미합니다. 관리 및 거버넌스 영역에서는 DX 개선, 자동화, 정책·감사 표준화가 강화됐고, 기존 인프라 자원(Blueprints, VM, NAT, Synapse Link 등)의 지원 종료 안내는 최신 서비스로의 전환을 적극 유도하고 있습니다.
 
-수많은 미리 보기(preview) 기능이 빠르게 정식 지원(GA) 단계로 발전하는 만큼, 향후 AI를 중심으로 한 모듈형 자동화, 데이터 거버넌스, 개발자 환경 혁신이 계속될 것으로 예상됩니다. 7월에는 Foundry 기반 신규 모델, Fabric 및 OneLake 관련 확장, 더 빠른 데이터베이스 기능, 엔터프라이즈 보안 및 거버넌스 도구의 정식 지원 소식이 이어질 전망입니다. Azure를 활용하는 모든 조직은 AI, 자동화, 데이터 중심의 기술 포트폴리오 변화를 주목하면서 적극적인 도입 전략을 준비해야 할 시점입니다.
+다음 달에는 Microsoft Fabric과 Foundry의 기능 및 연결성이 추가 확대되고, 보안·감사·AI 평가와 운영 자동화 분야에서 새로운 규제 대응 및 실무 지원 도구들이 등장할 전망입니다. 또한 글로벌 및 한국 지역의 신규 서비스 배포와, 최신 VM, 컨테이너, 데이터 서비스 지원 확대를 통해 엔터프라이즈 클라우드 환경의 안정성·효율성이 더욱 향상될 것으로 기대됩니다.
