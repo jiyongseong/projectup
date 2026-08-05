@@ -1,161 +1,166 @@
 # Azure 월간 업데이트 요약 - 2026년 07월
 
-## 전반적 트렌드 및 핵심 인사이트
+## 전반적인 트렌드 및 핵심 인사이트
 
-2026년 7월의 Azure 업데이트는 하이브리드, 멀티클라우드, AI, 자동화, 보안, 거버넌스 등 광범위한 영역에서의 혁신이 두드러지는 한 달이었습니다. 특히 최신 인공지능 모델(Microsoft Foundry 및 Azure Databricks 기반 모델 포함)의 지원 확대와 AI 기반 워크로드를 위한 인프라 최적화, 데이터 및 네트워크 보안 강화, 글로벌 리전 확장, 관리 효율성 제고, 그리고 중요한 마이그레이션·모듈 관리 기능들과 클라우드 서비스 운영 표준화에 대한 새로운 시도들이 두드러집니다.
+2026년 7월, Azure의 업데이트는 클라우드 네이티브 인프라의 고도화, 멀티 클라우드 지원 강화, AI 서비스 통합, 보안 및 거버넌스의 현대화, 지역별 서비스 확대 등 전 영역에서 혁신이 계속되고 있음을 보여줍니다. 가장 두드러진 트렌드는 Kubernetes와 AKS 등 컨테이너 관리 기술의 표준 채택과 자동화를 통한 효율성 증대, OpenAI 및 Anthropic Claude 등 첨단 AI 모델의 Databricks 및 Foundry 등 플랫폼 연계, 엔터프라이즈 보안 요구에 대응하기 위한 Confidential Computing, Network Security Perimeter, Entra 기반 인증 등입니다.
 
-AI 분야에서는 Azure Databricks와 Foundry를 중심으로 Claude Opus 5 및 GPT-5.6 등 첨단 AI 모델 서빙, AI 게이트웨이(미리 보기), AI 텔레메트리 보호 등 실무적·보안적 요구에 부합하는 기능이 추가되었습니다. 데이터 보안 측면에선 클라이언트 단 블롭 암호화, 파일 및 Event Hubs의 암호화, Azure Enclave 등 엄격한 보안 환경 구축을 지원하는 업데이트들이 마이크로서비스, 데이터 저장소, 네트워크 전체에 걸쳐 정식 지원이 확대되었습니다.
+지역별로 인도 South Central·칠레 등 신규 리전이 열린 것은 글로벌 공급망 안정성과 데이터 주권 요구에 적극 대응하는 것으로 해석됩니다. 스토리지 서비스의 데이터 무결점 강화, 클라우드 간 저장소 이동 간편화, Azure Site Recovery의 고성능 강화 등 데이터 관리 신뢰도도 높아졌습니다. AI 통합에서는 Foundry Toolboxes와 Databricks AI 모델 서빙, Fabric 연계 모니터링의 실시간 분석, Foundry 내 PII 샘플 Playground 등 실사용 중심 혁신이 돋보입니다.
 
-운영 및 거버넌스 분야에서는 Kubernetes Fleet Manager, Chaos Studio, Azure Automation, Site Recovery, Storage Migration 등 대규모, 멀티 리전 시나리오에 대응하는 자동화, 복구, 관리 기능이 크게 향상되었습니다. 다양한 SDK 및 PowerShell 모듈의 업데이트, 운영 환경의 지원 종료 정책(파이썬/파워셸 레거시 버전)으로 클라우드 솔루션의 현대화와 보안 강화가 강조되었습니다.
+실행 환경에서는 Python 3.14, PowerShell 7.6 등 최신 언어 지원 확대와 기존 버전 지원 종료의 안내가 병행되고, 네트워킹 영역에서는 NAT64, IPv6, DDoS 맞춤 정책 등 차세대 인프라 지원이 확대되었습니다. 또 저장소·보안·네트워크·모니터링 각 분야에서 SDK와 관리툴 통합이 빨라져, DevOps와 관리 거버넌스 확장성도 크게 향상되었습니다.
 
-글로벌 리전 확장은 인도 South Central, 칠레 Central 등 신규 리전의 개설 및 Azure Database, OpenShift 등의 배치 지원이 이루어져, 데이터 주권, 레이턴시 개선, 규제 대응 등 산업별 클라우드 도입의 폭이 더욱 넓어졌습니다.
-
-전반적으로 Azure는 인공지능, 하이브리드 클라우드, 멀티 리전, 보안 및 관리 효율성 중심으로 빠르게 진화하고 있으며, AI가 엔터프라이즈 업무 및 인프라의 핵심 요소로 자리잡고 있음을 보여줍니다. 앞으로도 서비스 간 연계, 정책 및 자동화 표준화, 보안/컴플라이언스, 멀티클라우드 데이터 이동성, AI와 네이티브 인프라 협업 등 복잡성이 높은 시나리오에 대한 해결책이 지속적으로 요구될 전망입니다.
+전반적으로 Azure는 멀티 클라우드, 글로벌, AI 및 고도 보안 요구에 선제적으로 대응하며, 기업들의 지속적인 디지털 전환을 보다 쉽고 빠르게 지원할 수 있는 플랫폼으로 성장하고 있습니다. 이번 달에는 특히 데이터 보안·컴플라이언스, 최신 AI 활용, Kubernetes 및 자동화, 클라우드 마이그레이션의 실제 효율성이 크게 개선된 점이 눈에 띄었습니다.
 
 ---
 
-## 1️⃣ 컴퓨트 & 컨테이너
+## 1️⃣ 컴퓨팅 & 컨테이너
 
-이번 달 컴퓨트 및 컨테이너 영역에서는 애플리케이션 라우팅의 표준화, 함수형 컴퓨팅 언어 지원, 대규모 Kubernetes 관리 자동화가 주요 이슈입니다.
+이번 달 컴퓨팅·컨테이너 부문은 Kubernetes 기반 혁신, Azure Functions 언어 지원 확대, Fleet Manager의 효율적 리소스 배치, AKS 데이터 암호화, 이미지 사양 표준화 등이 강조되었습니다. Python·PowerShell 최신 버전 지원으로 모던 워크로드 실행 환경 개선, AKS Gateway API 등 인그레스 표준화를 통한 운영 효율성 개선도 주목할 만합니다.
 
-- [Application Routing with Gateway API](https://azure.microsoft.com/updates?id=567944)  
-  AKS에서 Gateway API를 활용한 애플리케이션 라우팅이 정식 지원되어, 서비스 메쉬 없이 Kubernetes 표준 기반 인그레스 관리가 가능해졌습니다.
-- [Azure Functions support for Python 3.14](https://azure.microsoft.com/updates?id=567646)  
-  Python 3.14 지원으로 장기적인 보안, 성능 개선 및 최신 함수 개발 환경이 제공됩니다.
-- [Resource placement in Azure Kubernetes Fleet Manager](https://azure.microsoft.com/updates?id=567931)  
-  여러 Kubernetes 클러스터에 리소스를 분산·적용할 수 있도록 간소화된 API와 UI가 제공되어 대규모 AKS 관리가 용이해졌습니다.
-- [Encryption in Transit for Azure Files NFS Shares in AKS](https://azure.microsoft.com/updates?id=567787)  
-  AKS에서 파일 공유 통신 암호화가 정식 지원되며, TLS 기반 전송 암호화로 보안·컴플라이언스 요구를 충족합니다.
-- [Public Preview: Prepared Image Specification](https://azure.microsoft.com/updates?id=567949)  
-  AKS 노드 이미지 사전 구성으로 빠른 스케일링, AI/GPU 워크로드 최적화, 운영 효율성이 미리 보기로 제공됩니다.
+### [Application Routing with Gateway API](https://azure.microsoft.com/updates?id=567944)
+AKS에서 Gateway API 기반 애플리케이션 라우팅이 정식 지원되어, 기존 인그레스 환경에서 최신 표준으로 점진적 전환을 지원합니다.
 
-### 카테고리 요약
-컨테이너 플랫폼의 표준화와 자동화, 운영 효율성 제고, 언어/이미지 최신화, 데이터 보안 향상에 중점을 둔 업데이트가 핵심입니다. AKS의 다양한 보안·운영 개선과 Functions/컨테이너의 언어, 이미지 지원 확대가 대규모 분산/복잡한 워크로드에도 안정적 인프라를 제공하는 방향으로 발전하고 있습니다.
+### [Azure Functions support for Python 3.14](https://azure.microsoft.com/updates?id=567646)
+Azure Functions가 Python 3.14에 정식 지원을 제공, 최신 보안·지원 창구 확대와 개발자 생산성 향상.
 
----
+### [Azure Functions support for PowerShell 7.6 (미리 보기)](https://azure.microsoft.com/updates?id=567651)
+PowerShell 7.6 미리 보기 기반 Azure Functions 개발 가능해졌으며, 향후 자동화 확장성 개선 전망.
 
-## 2️⃣ 데이터베이스 & 분석
+### [Resource placement in Azure Kubernetes Fleet Manager](https://azure.microsoft.com/updates?id=567931)
+Fleet Manager의 리소스 배치가 정식 지원되어, 여러 AKS·Arc 클러스터에 대한 일관적 배포와 거버넌스 용이.
 
-이번 달에는 AI와 분석 시나리오, 데이터베이스 보안 및 관리 효율성, 멀티리전 지원이 강조되었습니다.
-
-- [Azure Databricks SQL Serverless in UK West](https://azure.microsoft.com/updates?id=567444)  
-  자동 스케일 및 서버리스 분석 환경이 영국 West 리전에 정식 지원되어 엔터프라이즈 빅데이터 분석이 더욱 원활해졌습니다.
-- [Azure Database for PostgreSQL flexible server in India South Central](https://azure.microsoft.com/updates?id=568334)  
-  인도 South Central 리전에 PostgreSQL flexible server 지원 확대로 신흥시장에 클라우드 기반 데이터베이스 도입이 쉬워졌습니다.
-- [Microsoft Defender 보안 평가 for PostgreSQL Flexible Server](https://azure.microsoft.com/updates?id=567527)  
-  PostgreSQL 서버의 보안 상태를 지속 자동 평가·모니터링하여 컴플라이언스 및 보안 리스크 관리가 향상되었습니다.
-- [New Powershell module: Az.PostgreSQLFlexibleServer](https://azure.microsoft.com/updates?id=566209)  
-  PostgreSQL 18, 탄력적 클러스터 등 최신 기능을 관리할 수 있는 PowerShell 모듈이 출시되어 관리 효율이 크게 개선되었습니다.
-- [Azure Databricks Claude Opus 5 지원](https://azure.microsoft.com/updates?id=568316)  
-  첨단 AI 모델(Anthropic Claude Opus 5, Sonnet 5 등)을 Databricks에서 데이터 분석과 전문 AI 활용 목적으로 정식 지원합니다.
-
-### 카테고리 요약
-서버리스/자동화 분석, 데이터베이스 클라우드 확장, AI 모델 서빙, 데이터 보안 컴플라이언스 기능들이 통합되어, 분석과 운영의 경계가 더욱 유연하게 변화하고 있습니다. PostgreSQL 등 데이터베이스 관련 모듈의 관리 자동화, 리전 확장, AI 모델의 데이터 활용성 증대로 엔터프라이즈 데이터 인프라의 혁신이 가속화되는 경향을 보입니다.
+### [Prepared Image Specification (미리 보기)](https://azure.microsoft.com/updates?id=567949)
+AKS 노드 이미지 사전 준비로 노드 초기화 시간 단축 및 확장성·운영 효율성 강화.
 
 ---
 
-## 3️⃣ 스토리지 & 마이그레이션
+## 2️⃣ 저장소 & 데이터 관리
 
-스토리지와 데이터 마이그레이션 분야에서는 보안, 클라이언트 SDK 기능, 외부 클라우드에서 Azure로의 데이터 이동성, 운영 효율성이 주요 이슈였습니다.
+이번 달에는 Blob/NFS 저장소 암호화, SFTP 인증 모델 개선, 클라우드 간 데이터 이관 도구 확대, NetApp Files SMB 락 구성 등 데이터 신뢰성과 안전성이 향상되었습니다. SDK 통합과 클라우드 간 마이그레이션 지원, Azure Files의 NFS 데이터 암호화 전송 정식 지원 등 엔터프라이즈급 데이터 운용도 강화되었습니다.
 
-- [Client-side data integrity protections in Azure Blob Storage](https://azure.microsoft.com/updates?id=566895)  
-  CRC64-NVME가 SDK에 통합되어 애플리케이션 단에서 데이터 무결성 검증이 가능해졌으며, 엔드투엔드 보안이 강화됐습니다.
-- [Azure Storage Mover: GCS to Azure Blob Storage migration 지원](https://azure.microsoft.com/updates?id=566948)  
-  GCS 데이터의 에이전트리스 마이그레이션 및 네트워크 격리(Private Link) 활용이 가능하여 멀티클라우드 통합이 간소화되었습니다.
-- [Microsoft Entra ID 기반 Blob Storage SFTP 접속 지원](https://azure.microsoft.com/updates?id=567085)  
-  SFTP 사용자 관리의 자동화, Entra ID 기반 인증 및 조건부 접근 정책이 도입되어 외부 협업 및 온보딩이 단순화되었습니다.
-- [Azure Disk Storage: Instant Access via application consistent restore points](https://azure.microsoft.com/updates?id=565758)  
-  VM 복구 시점을 즉시 디스크로 복원하여 빠른 RTO 및 안정적인 복구가 미리 보기로 도입되었습니다.
-- [Azure NetApp Files: SMB Oplocks 설정 지원](https://azure.microsoft.com/updates?id=568396)  
-  SMB 볼륨의 캐싱 성능 제고, 볼륨별 Oplocks 설정 및 원격 복제 볼륨의 독립적 설정 지원이 발표되었습니다.
+### [Client-side data integrity protections in Azure Blob Storage](https://azure.microsoft.com/updates?id=566895)
+Blob Storage에서 CRC64-NVME 체크섬 지원으로 클라이언트단 데이터 무결성 검증 가능, 엔드투엔드 신뢰성 확보.
 
-### 카테고리 요약
-스토리지 신뢰성과 관리 편의성, 클라우드 간 마이그레이션 표준화, 접근통제 강화 및 복구 시간 단축이 중심입니다. SDK 기반 보안 검증, 네트워크 분리/암호화, 다중 볼륨 설정, 자동화된 복구 기능 등 대용량, 멀티클라우드 환경에서의 안정성과 유연성이 크게 개선되었습니다.
+### [Microsoft Entra ID-based access for Azure Blob Storage SFTP](https://azure.microsoft.com/updates?id=567085)
+Entra ID 기반 SFTP 접근이 정식 지원, 인증·온보딩·협업 단순화 및 보안 강화.
 
----
+### [Encryption in Transit for Azure Files NFS Shares in AKS](https://azure.microsoft.com/updates?id=567787)
+AKS에서 Azure Files NFS 볼륨의 TLS 암호화 데이터 전송 정식 지원, 컴플라이언스 대응 및 보안 강화.
 
-## 4️⃣ 네트워크 & 보안
+### [Azure Storage Mover에서 Google Cloud Storage 이동 지원 (미리 보기)](https://azure.microsoft.com/updates?id=566948)
+Google Cloud Storage에서 Blob Storage로의 클라우드 간 이동이 미리 보기로 지원되어, 멀티 클라우드 통합이 용이해짐.
 
-네트워크와 보안은 대규모 환경에서의 규제, 응대 효율성, 세분화 정책이 강조되어, 데이터 및 애플리케이션 보호가 주요 초점이었습니다.
-
-- [Azure Firewall: HTTP header insertion](https://azure.microsoft.com/updates?id=568115)  
-  HTTP 헤더 삽입 기능으로 엔터프라이즈 액세스 정책, 인증·접근 통제, Microsoft Entra 연동 등 시나리오에 유연하게 대응합니다.
-- [IPv6 support for Azure VPN Gateway](https://azure.microsoft.com/updates?id=567847)  
-  듀얼 스택 VPN을 통한 IPv6 워크로드 지원으로 멀티넷 환경에서의 네트워크 확장성과 미래 준비가 강화됐습니다.
-- [StandardV2 NAT Gateway: NAT64 지원](https://azure.microsoft.com/updates?id=568409)  
-  IPv6/IPv4 혼합 환경 네트워크 번역을 지원하여 클라우드 네이티브 애플리케이션·레거시 인터넷 대상 간 통합이 용이해졌습니다.
-- [Azure DDoS Protection custom policy 미리 보기](https://azure.microsoft.com/updates?id=568063)  
-  트래픽별 맞춤 DDoS 완화 정책 설정이 가능하여 대규모 워크로드 상황에 맞는 보안 대응이 유연하게 적용됩니다.
-- [Azure Front Door edge actions 미리 보기](https://azure.microsoft.com/updates?id=567402)  
-  프론트 도어 엣지에서 JavaScript 함수 실행, 실시간 요청 처리 및 보안·성능 조정이 가능합니다.
-
-### 카테고리 요약
-네트워크 자원의 세분화, 보안 정책의 맞춤화, IPv6/IPv4 통합, 애플리케이션 보안 유연성과 운영 자동화가 핵심입니다. DDoS/파이어월/프론트 도어 정책 등 대규모 환경에서 실무적, 보안적 요구가 융합되고, API·SDK 지원 등 플랫폼화가 강화되었습니다.
+### [SMB Opportunistic Locking 구성 지원 (미리 보기)](https://azure.microsoft.com/updates?id=568396)
+NetApp Files에서 SMB/듀얼 프로토콜 볼륨의 Oplock 설정 가능, 클라이언트 캐싱 효율 개선.
 
 ---
 
-## 5️⃣ 관리 & 거버넌스
+## 3️⃣ 네트워킹 & 보안
 
-운영 자동화, 거버넌스, 복구 시나리오, 지원 종료 등 관리 효율성과 현대화가 주요 이슈입니다.
+네트워크는 NAT64로 IPv6~IPv4 접속 지원 확대, VPN Gateway에서 IPv6 정식 지원, Azure Firewall의 HTTP 헤더 삽입, DDoS 맞춤 정책, Front Door Edge Actions 등 컨트롤·확장성·보안 혁신이 이어졌습니다. Key Vault 프리미엄의 대칭키 미리 보기 등 보안 컴플라이언스 요구와 실제 서비스 연결성 개선이 두드러집니다.
 
-- [Azure Automation PowerShell 7.6 지원 정식화](https://azure.microsoft.com/updates?id=568102)  
-  최신 PowerShell 및 Azure CLI 실행 환경으로 보안·성능·이식성이 대폭 향상되었습니다.
-- [Azure Site Recovery: 5x churn 지원](https://azure.microsoft.com/updates?id=566966)  
-  대규모 고속 IOPS 워크로드 복구가 가능해져 미션 크리티컬 애플리케이션 요구에 부합합니다.
-- [Azure Chaos Studio: Workspaces & Scenarios 미리 보기](https://azure.microsoft.com/updates?id=567184)  
-  사전 구성된 장애 시나리오 테스트, 리소스 자동 탐지, 컴플라이언스 리포트 등 실무 중심의 운영 자동화가 도입됐습니다.
-- [Retirement: Python 2.7, 3.8, PowerShell 7.1, 7.2 지원 종료 안내](https://azure.microsoft.com/updates?id=567556)  
-  구버전 러untime 미지원에 따라 보안 유지 및 최신 기능 확보를 위해 업그레이드가 반드시 필요합니다.
-- [Reservation exchanges for Azure services 종료 안내](https://azure.microsoft.com/updates?id=568514)  
-  Savings plan 적용 서비스는 2027년 2월부터 예약 교환이 중단되며, 교환 정책 변경에 대한 대비가 요구됩니다.
+### [NAT64 on StandardV2 NAT Gateway](https://azure.microsoft.com/updates?id=568409)
+NAT64로 IPv6 워크로드가 IPv4 전용 인터넷으로 자연스럽게 통신 가능, DNS64 연계 통한 자동 트래픽 변환.
 
-### 카테고리 요약
-운영 자동화, 장애 복구, 정책 관리, 장기 데이터 보존, 지원 종료 및 정책 변경에 대한 공식화가 핵심입니다. 최신 오케스트레이션 도구, 클라우드 복구, 런타임 관리 표준화, 운영 정책 변화에 대한 빠른 대응이 엔터프라이즈 환경의 안정성을 강화합니다.
+### [HTTP header insertion in Azure Firewall](https://azure.microsoft.com/updates?id=568115)
+Azure Firewall에서 HTTP/HTTPS 헤더 삽입 지원, 엔터프라이즈 보안 및 접근 제어 시나리오 확대.
 
----
+### [IPv6 support for Azure VPN Gateway](https://azure.microsoft.com/updates?id=567847)
+VPN Gateway에서 IPv6 트래픽 정식 지원, 듀얼 스택 환경의 네트워크 운영 확대.
 
-## 6️⃣ AI + 머신러닝 / Microsoft Foundry
+### [Azure DDoS Protection custom policy (미리 보기)](https://azure.microsoft.com/updates?id=568063)
+DDoS Protection에서 커스텀 정책 미리 보기 지원, 워크로드별 임계치 설정 가능.
 
-AI 관련, 특히 Microsoft Foundry를 기반으로 하는 기능 확장 및 엔터프라이즈 전체에서 AI 워크로드와 거버넌스 연동이 많이 발표되었습니다.
-
-- [Toolboxes in Microsoft Foundry](https://azure.microsoft.com/updates?id=563481)  
-  툴박스 정식 지원으로 AI 에이전트 개발팀이 공통·재사용 가능한 도구 세트를 쉽게 관리·통제할 수 있게 되었습니다.
-- [Document PII NextGen Playground in Azure AI Language](https://azure.microsoft.com/updates?id=564382)  
-  문서 기반 PII 탐지 샘플 경험이 정식 지원되어, 컴플라이언스·보호 업무를 빠르고 쉽게 설계할 수 있습니다.
-- [Open AI GPT-5.6 on Azure Databricks (Microsoft Foundry 통합)](https://azure.microsoft.com/updates?id=567431)  
-  Foundry에서 구매한 최신 GPT 모델을 Databricks에서 서빙할 수 있어, AI 서비스와 데이터 분석이 통합됩니다.
-- [Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry 미리 보기](https://azure.microsoft.com/updates?id=567594)  
-  Foundry 및 Application Insights에서 생성형 AI 데이터에 대한 접근통제 및 민감 정보 보호 기능이 미리 보기로 도입되었습니다.
-- [Public Preview: Document PII playground sample in Microsoft Foundry NextGen](https://azure.microsoft.com/updates?id=563331)  
-  Foundry NextGen 포털에서 문서 PII 탐지 샘플을 빠르게 평가·비교할 수 있는 미리 보기 기능이 발표되었습니다.
-
-### 카테고리 요약
-Microsoft Foundry 및 Databricks 기반 AI 모델 서빙, 도구 관리 표준화, AI 목적의 데이터 보호 및 거버넌스 강화, 컴플라이언스·보안 중심 AI 환경조성이 주요 업데이트입니다. 조직 내 AI 활용 확대에 따라 표준화된 개발·운영 환경, 데이터 보호, 엔터프라이즈 통제 정책 등이 필수적으로 적용되고 있습니다.
+### [Symmetric keys on Azure Key Vault Premium (미리 보기)](https://azure.microsoft.com/updates?id=566746)
+Key Vault Premium에서 대칭키(AES) 미리 보기 지원, CNSA-2.0 및 미래 암호화 대응에 유리.
 
 ---
 
-## 7️⃣ 미리 보기 및 DevOps / Microsoft Fabric
+## 4️⃣ AI & 머신러닝 · 데이터 분석
 
-DevOps, 서비스 연동, 신규 기능(미리 보기), Microsoft Fabric 연계 및 관리 자동화가 주요 이슈입니다.
+AI+분석 영역은 Databricks에서 Claude Opus 5, Sonnet 5, OpenAI GPT-5.6 등 최신 모델의 정식 지원, Event Hubs의 Confidential Computing과 NSP, PII Playground 등 실무용 기능 확대에 주목할 만합니다. Foundry와 Databricks의 모델 서빙·통합, Azure AI Language의 실시간 문서 PII 평가 등 AI 활용의 실효적 확대가 핵심입니다.
 
-- [AI Gateway in Azure API Management 미리 보기](https://azure.microsoft.com/updates?id=568184)  
-  AI 모델(Microsoft Foundry 등)을 API 형태로 안전하게 운영할 수 있는 AI Gateway가 미리 보기로 출시되었습니다.
-- [Azure Monitor Logs mirroring into Microsoft Fabric 미리 보기](https://azure.microsoft.com/updates?id=568322)  
-  Fabric OneLake 미러링을 통해 Azure Log 데이터와 비즈니스 데이터를 통합 분석, AI·트렌드 분석이 가능합니다.
-- [Export historical data from Log Analytics workspace with Export jobs 미리 보기](https://azure.microsoft.com/updates?id=566591)  
-  로그 데이터를 원하는 기간·쿼리 기준으로 내보내기 지원, 외부 시스템·분석·컴플라이언스 목적에 활용할 수 있습니다.
-- [Manage Azure Chaos Studio from the Azure CLI 미리 보기](https://azure.microsoft.com/updates?id=567225)  
-  Azure CLI를 통한 Chaos Studio 시나리오 관리로 운영 자동화 및 확장성이 크게 향상되었습니다.
-- [Exceptions in WAF for Application Gateway/Front Door 미리 보기](https://azure.microsoft.com/updates?id=567218)  
-  WAF 예외정책 기능 도입으로 실무 환경에 맞는 정교한 보안 정책 적용이 가능해졌습니다.
+### [Claude Opus 5 on Azure Databricks](https://azure.microsoft.com/updates?id=568316)
+Databricks에서 Anthropic Claude Opus 5 정식 지원, 고난도 AI업무·코딩·에이전트 워크플로우 활용 가능.
 
-### 카테고리 요약
-DevOps, 모니터링, 서비스 간 연계, Fabric 기반 데이터 연동, API 관리 및 자동화 도구의 강화, 보안 정책 맞춤화 등 클라우드 네이티브 운영과 AI 연계에 기반한 데이터·API 거버넌스, 관리 자동화의 진화가 두드러집니다.
+### [Generally available: Anthropic Claude Sonnet 5 on Azure Databricks](https://azure.microsoft.com/updates?id=567194)
+Sonnet 5가 Databricks에서 정식 지원, 중대 분석·에이전트 워크플로우에서 최신 AI 사용 가능.
+
+### [Open AI GPT-5.6 on Azure Databricks](https://azure.microsoft.com/updates?id=567431)
+GPT-5.6의 Foundry 구매 모델을 Databricks에서 서빙할 수 있어, 실무용 AI 개발/운영 통합 지원.
+
+### [Document PII NextGen Playground in Azure AI Language](https://azure.microsoft.com/updates?id=564382)
+Azure AI 서비스의 문서 PII 검출 Playground 정식 지원, 샘플 기반 실시간 검출·평가 가능.
+
+### [Network Security Perimeter support for Azure Event Hubs](https://azure.microsoft.com/updates?id=567203)
+Event Hubs에서 NSP 지원, 네트워크 격리 및 보안 정책 일관화 가능.
+
+---
+
+## 5️⃣ 관리·운영·컴플라이언스 & 마이그레이션
+
+관리 및 마이그레이션 영역에서는 Automation의 최신 언어 지원과 기존 버전 지원 종료, Site Recovery 고속 작업, Storage Mover 도구, Azure Chaos Studio의 시나리오 관리 및 CLI 통합, 예약 교환 정책 변경 등 실제 운영의 자동화·효율성·컴플라이언스 대응이 강화되었습니다.
+
+### [Azure Automation supports PowerShell 7.6 runbooks and Runtime environment](https://azure.microsoft.com/updates?id=568102)
+PowerShell 7.6 런북·실행환경 정식 지원, 자동화 스크립트 현대화와 운영 효율성 증대.
+
+### [Support 5x churn in Azure Site Recovery](https://azure.microsoft.com/updates?id=566966)
+Site Recovery가 5배의 IOPS 지원, 중대 워크로드에서도 신속 복구 가능.
+
+### [Log Analytics Export jobs (미리 보기)](https://azure.microsoft.com/updates?id=566591)
+Log Analytics의 데이터를 쿼리 기반 외부 저장소로 내보내는 기능 미리 보기 지원, 컴플라이언스·분석·이관 편의 제공.
+
+### [Manage Azure Chaos Studio from the Azure CLI (미리 보기)](https://azure.microsoft.com/updates?id=567225)
+Chaos Studio 시나리오를 CLI에서 간편히 관리·실행, 자동화·통합 관리 효율 강화.
+
+### [Support for Python-2.7; 3.8 and PowerShell- 7.1; 7.2 will be retired](https://azure.microsoft.com/updates?id=567556)
+Automation 환경에서 Python 2.7, 3.8, PowerShell 7.1, 7.2 지원 종료 안내—보안·운영 측면 최신 버전으로 업그레이드 필수.
+
+---
+
+## 6️⃣ Microsoft Foundry
+
+Foundry는 Toolboxes의 정식 지원, PII Playground 샘플 미리 보기, AI Gateway 연계 모델 서빙 등 조직 내 AI 자산 관리·유통·프로덕션 배포 여건을 크게 개선했습니다. 통합된 툴 관리, 사용자별 접근 제어, 안전한 데이터 보호 등 엔터프라이즈 AI 혁신 중심입니다.
+
+### [Toolboxes in Microsoft Foundry](https://azure.microsoft.com/updates?id=563481)
+Toolboxes 정식 지원으로 모든 조직에 AI 툴 사용·관리 효율성 대폭 향상.
+
+### [Document PII playground sample in Microsoft Foundry NextGen (미리 보기)](https://azure.microsoft.com/updates?id=563331)
+Foundry NextGen의 PII Playground 미리 보기 제공, 샘플 기반 신속 평가 및 API 연동 가능.
+
+### [AI Gateway in Azure API Management (미리 보기)](https://azure.microsoft.com/updates?id=568184)
+AI Gateway 미리 보기, Foundry 및 다양한 AI 모델 관리·서빙과 보안정책 통합.
+
+### [Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry (미리 보기)](https://azure.microsoft.com/updates?id=567594)
+Foundry와 Application Insights에서 생성형 AI 데이터 보호 강화.
+
+### [Azure Monitor Logs mirroring into Microsoft Fabric (미리 보기)](https://azure.microsoft.com/updates?id=568322)
+Azure Monitor 로그를 Fabric에 실시간 복사 지원, 경영·운영 데이터 및 AI 통합 분석 가능.
+
+---
+
+## 7️⃣ Azure 지역·데이터센터
+
+지역 확장에서는 인도 South Central과 칠레 Central 리전 오픈, PostgreSQL Flexible Server 신규 리전 배포, 네트워크 및 컴플라이언스의 지역별 확장 등 글로벌 클라우드 가용성과 데이터 주권을 강화하는 전략이 실현되고 있습니다.
+
+### [Microsoft Azure now available from new cloud region in India (India South Central)](https://azure.microsoft.com/updates?id=568013)
+인도 South Central 지역 신규 오픈, AI·클라우드 인프라 수요 대응 및 데이터 주권 보장.
+
+### [Azure Database for PostgreSQL flexible server in India South Central](https://azure.microsoft.com/updates?id=568334)
+PostgreSQL flexible server 신규 리전 배포로 데이터베이스 서비스 확장.
+
+### [Azure Red Hat OpenShift in Chile Central](https://azure.microsoft.com/updates?id=566732)
+칠레 최초 Azure 리전 오픈과 함께 OpenShift 정식 지원, 규제 산업 및 대기업의 클라우드 전환 가속화.
+
+### [Standard service endpoint (미리 보기)](https://azure.microsoft.com/updates?id=561475)
+IaaS~PaaS 통합 엔드포인트, 지역별 Private Link 네트워크 격리·확장 대응.
+
+### [New Powershell module: Az.PostgreSQLFlexibleServer](https://azure.microsoft.com/updates?id=566209)
+PostgreSQL 관리 PowerShell 모듈 개편, 신기능·신규 리전 대응 효율성 강화.
 
 ---
 
 ## 총평 및 다음 달 전망
 
-2026년 7월은 AI와 멀티클라우드, 자동화·운영 효율성, 보안 강화를 중심으로 Azure 플랫폼의 전방위적 혁신이 확인된 시기였습니다. Microsoft Foundry와 Databricks 연계, 인도·칠레 등 신규 리전 확장, AKS/Kubernetes 중심 분산 애플리케이션 관리 표준화 등이 엔터프라이즈 클라우드 전환·운영 비용 절감·규제 대응에 큰 의미를 부여합니다. 엔터프라이즈 내 AI 활용과 데이터 보호 병행, 구버전 런타임 지원 종료을 통한 현대화 전략, 멀티클라우드 데이터 마이그레이션 및 복구 표준화, 글로벌 네트워크·보안 세분화 등이 서비스별로 가속화되고 있습니다.
+2026년 7월의 Azure 업데이트는 글로벌 커버리지의 확장과 실제 엔터프라이즈 요구에서 비롯된 AI·데이터·보안·운영 혁신이 유기적으로 결합된 한 달이었습니다. 특히 AKS 표준화, Foundry와 Databricks 등 AI 플랫폼의 통합, 데이터 저장소의 신뢰성 혁신, 멀티 클라우드 지원 도구 강화, 자동화 및 언어 지원 현대화, 네트워크·보안 컨트롤의 디테일한 혁신 등이 두드러졌으며, 컴플라이언스 및 지역별 데이터 주권 강화까지 구체적으로 현실화된 점이 인상적입니다.
 
-다음 달에는 Microsoft Fabric 및 Foundry 연동, 보안 및 컴플라이언스 기능의 더욱 통합적인 오퍼링, 멀티클라우드 워크로드에 대한 자동화·최적화, AI 모델 관리·운영 표준화, 클라우드-온프레미스 데이터 이동·분산 환경 제어 기능 등이 더욱 강화될 것으로 기대됩니다. AI와 분산 리소스 관리, 데이터 보호, 자동화 도구의 표준화는 여전히 Azure의 지속적 혁신을 견인할 핵심 축이 될 것입니다.
+다음 달에는 AI 및 데이터 통합관리, 자동화와 운영 정책의 세분화, 네트워크 현대화와 멀티 리전 지원, 기존 버전 지원 종료에 따른 실제 업그레이드 가이드·도구 강화, Fabric과 Foundry 중심의 Analytics·Governance 혁신이 지속될 것으로 전망됩니다. Enterprise 고객은 Azure 최신 기능을 적극적으로 도입하여 운영 효율성과 보안, 데이터 신뢰성을 동시에 극대화하는 여건이 마련될 것입니다.
